@@ -6,8 +6,8 @@ function Projects() {
     {
       title: 'Netflix Clone 🎬',
       description: 'Clon de Netflix con React y UI dinámica.',
-      demoLink: '#', // placeholder
-      codeLink: '#', // placeholder
+      demoLink: '#',
+      codeLink: '#',
     },
     {
       title: 'To‑Do App',
@@ -21,8 +21,8 @@ function Projects() {
     {
       title: 'GranAndesa 🌾',
       description: 'Sitio empresarial con landing pages y componentes reutilizables.',
-      demoLink: '#', // placeholder
-      codeLink: '#', // placeholder
+      demoLink: '#',
+      codeLink: '#',
     },
     {
       title: 'Landing Comercial',

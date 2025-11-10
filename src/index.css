@@ -2,9 +2,11 @@
 
 /* Global light futuristic theme adjustments */
 :root {
-  /* Paleta azul elegante */
-  --accent: #2563eb; /* blue-600 */
-  --accent-2: #60a5fa; /* blue-400 */
+  /* Paleta azul principal */
+  --accent: #2563eb; /* azul */
+  --accent-2: #1d4ed8; /* azul más profundo */
+  --bg-start: #f2f5f9; /* gris claro futurista */
+  --bg-end: #e6ecf3;   /* gris ligeramente más oscuro */
 }
 
 html, body, #root {
@@ -12,7 +14,7 @@ html, body, #root {
 }
 
 body {
-  background: linear-gradient(135deg, #f7f9fc 0%, #eef3f8 100%);
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
   color: #0f172a; /* slate-900 */
 }
 
@@ -27,6 +29,10 @@ body {
 }
 .accent-bg {
   background-color: var(--accent);
+}
+.neon-text {
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(37, 99, 235, 0.40), 0 0 20px rgba(37, 99, 235, 0.25);
 }
 .glass {
   background: rgba(255, 255, 255, 0.65);

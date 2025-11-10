@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 function CertCard({ title, institution, year }) {
   return (
     <motion.div 
-      className="bg-gray-800 p-4 rounded-lg shadow-lg hover:shadow-green-500/50 transition-shadow duration-300"
-      whileHover={{ scale: 1.05 }}
+      className="glass p-5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+      whileHover={{ scale: 1.02 }}
     >
-      <h3 className="text-xl font-bold mb-1 text-green-400">{title}</h3>
-      <p className="text-md">{institution} ({year})</p>
+      <h3 className="text-xl font-bold mb-1" style={{color:'var(--accent)'}}>{title}</h3>
+      <p className="text-md text-slate-700">{institution} ({year})</p>
     </motion.div>
   );
 }

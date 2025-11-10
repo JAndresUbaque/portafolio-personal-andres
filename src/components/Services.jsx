@@ -11,13 +11,13 @@ function Services() {
   return (
     <motion.section 
       id="services"
-      className="py-16 bg-gray-900 text-white"
+      className="py-20 text-slate-900"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-center text-green-400">Servicios que Ofrezco</h2>
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-6 text-center neon-text">Servicios</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} title={service.title} description={service.description} />
