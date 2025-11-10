@@ -1,40 +1,25 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
-// import emailjs from '@emailjs/browser'; // Descomenta después de instalar y configurar
 
 function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí integra emailjs.sendForm('tu_service_id', 'tu_template_id', e.target, 'tu_user_id');
-    console.log('Formulario enviado:', formData);
-  };
-
   return (
     <motion.section 
       id="contact"
-      className="py-16 bg-black text-white"
+      className="py-20 text-slate-900"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-center text-green-400">Contacto</h2>
-        <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-          <input type="text" name="name" placeholder="Nombre" onChange={handleChange} className="w-full mb-4 p-2 bg-gray-800 rounded" />
-          <input type="email" name="email" placeholder="Email" onChange={handleChange} className="w-full mb-4 p-2 bg-gray-800 rounded" />
-          <textarea name="message" placeholder="Mensaje" onChange={handleChange} className="w-full mb-4 p-2 bg-gray-800 rounded" />
-          <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Enviar</button>
-        </form>
-        <div className="mt-8 text-center">
-          <a href="https://tu-linkedin.com" className="mx-2 hover:text-green-400">LinkedIn</a>
-          <a href="https://tu-github.com" className="mx-2 hover:text-green-400">GitHub</a>
-          <a href="/cv-andres-ubaque.pdf" download className="mx-2 hover:text-green-400">Descargar CV</a>
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-4xl font-bold mb-6">Contacto</h2>
+        <p className="text-slate-600 mb-8">
+          ¿Hablamos? Estoy abierto a oportunidades y colaboraciones.
+        </p>
+        <div className="flex flex-wrap justify-center gap-3">
+          <a href="mailto:andres@example.com" className="px-4 py-2 rounded-md text-white" style={{backgroundColor: 'var(--accent)'}}>Email</a>
+          <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noreferrer" className="px-4 py-2 rounded-md border" style={{borderColor: 'var(--accent)', color: 'var(--accent)'}}>LinkedIn</a>
+          <a href="https://github.com/JAndresUbaque" target="_blank" rel="noreferrer" className="px-4 py-2 rounded-md border" style={{borderColor: 'var(--accent)', color: 'var(--accent)'}}>GitHub</a>
+          <a href="https://wa.me/573000000000" target="_blank" rel="noreferrer" className="px-4 py-2 rounded-md border" style={{borderColor: 'var(--accent)', color: 'var(--accent)'}}>WhatsApp</a>
+          <a href="/cv-andres-ubaque.pdf" download className="px-4 py-2 rounded-md border" style={{borderColor: 'var(--accent)', color: 'var(--accent)'}}>Descargar CV</a>
         </div>
       </div>
     </motion.section>

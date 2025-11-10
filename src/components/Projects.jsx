@@ -2,26 +2,65 @@ import { motion } from 'framer-motion';
 import ProjectCard from './ProjectCard';
 
 function Projects() {
-  const projects = [
-    { title: 'Netflix Clone 🎬', description: 'Clon de Netflix con React, mostrando habilidades en UI dinámica.', demoLink: 'https://demo-link.com', codeLink: 'https://github.com/tu-repo/netflix' },
-    { title: 'GranAndesa 🌾', description: 'Web empresarial para GranAndesa, con landing pages y funcionalidades.', demoLink: 'https://demo-link.com', codeLink: 'https://github.com/tu-repo/granandesa' },
-    // Agrega más: To-Do List, Adivina el número, etc.
+  const practiceProjects = [
+    {
+      title: 'Netflix Clone 🎬',
+      description: 'Clon de Netflix con React y UI dinámica.',
+      demoLink: '#', // placeholder
+      codeLink: '#', // placeholder
+    },
+    {
+      title: 'To‑Do App',
+      description: 'Gestor de tareas con filtros y persistencia.',
+      demoLink: '#',
+      codeLink: '#',
+    },
+  ];
+
+  const businessProjects = [
+    {
+      title: 'GranAndesa 🌾',
+      description: 'Sitio empresarial con landing pages y componentes reutilizables.',
+      demoLink: '#', // placeholder
+      codeLink: '#', // placeholder
+    },
+    {
+      title: 'Landing Comercial',
+      description: 'Landing corporativa enfocada en conversión.',
+      demoLink: '#',
+      codeLink: '#',
+    },
   ];
 
   return (
     <motion.section 
       id="projects"
-      className="py-16 bg-gray-900 text-white"
+      className="py-20 bg-transparent text-slate-900"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-center text-green-400">Proyectos Destacados</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} title={project.title} description={project.description} demoLink={project.demoLink} codeLink={project.codeLink} />
-          ))}
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-4xl font-bold mb-6 text-center">
+          Proyectos
+        </h2>
+
+        <div className="mt-10">
+          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent)]">Práctica</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {practiceProjects.map((project, index) => (
+              <ProjectCard key={index} title={project.title} description={project.description} demoLink={project.demoLink} codeLink={project.codeLink} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-14">
+          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent)]">Empresariales</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {businessProjects.map((project, index) => (
+              <ProjectCard key={index} title={project.title} description={project.description} demoLink={project.demoLink} codeLink={project.codeLink} />
+            ))}
+          </div>
         </div>
       </div>
     </motion.section>
