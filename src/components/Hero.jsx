@@ -4,7 +4,7 @@ function Hero() {
   return (
     <motion.section 
       id="hero"
-      className="h-screen bg-linear-to-r from-gray-800 to-black flex items-center justify-center text-white"  // tailwind-intellisense-disable (opcional si warning persiste)
+      className="h-screen bg-gradient-to-r from-gray-800 to-black flex items-center justify-center text-white"  // tailwind-intellisense-disable (opcional si warning persiste)
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}

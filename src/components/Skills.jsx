@@ -15,8 +15,8 @@ function Skills () {
           <li className="flex items-center"><FaHtml5 className="text-3xl mr-2 text-orange-500" /> HTML</li>
           <li className="flex items-center"><FaCss3Alt className="text-3xl mr-2 text-blue-500" /> CSS</li>
           <li className="flex items-center"><FaJs className="text-3xl mr-2 text-yellow-500" /> JavaScript</li>
-          <li className="flex items-center"><FaReact className="text-3xl mr-2 text-blue-500" />React</li>
-          <li className="flex items-center"><FaGithub className="text-3xl mr-2 text-white-500" /> Git Hub</li>
+          <li className="flex items-center"><FaReact className="text-3xl mr-2 text-blue-500" /> React</li>
+          <li className="flex items-center"><FaGithub className="text-3xl mr-2 text-white" /> GitHub</li>
           {/* Agrega más de tu CV, como React, Git, SQL */}
         </ul>
       </div>

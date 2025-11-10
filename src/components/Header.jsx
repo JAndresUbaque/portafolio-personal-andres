@@ -8,7 +8,7 @@ function Header() {
         animate={{y:0}}
         transition={{duration:0.5}}>
             <nav className="container mx-auto flex justify-between">
-            <h1 className="text-2x1 font-bold text-green-400">Andrés Ubaque</h1>
+            <h1 className="text-2xl font-bold text-green-400">Andrés Ubaque</h1>
             <ul className='flex space-x-4'>
                 <li><a href='#hero' className="hover:text-green-400">Inicio</a></li>
                 <li><a href='#about' className="hover:text-green-400">Sobre Mi</a></li>
