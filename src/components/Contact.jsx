@@ -12,7 +12,7 @@ function Contact() {
     >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-4xl font-bold mb-6">Contacto</h2>
-        <p className="text-slate-600 mb-8">
+        <p className="text-slate-700 mb-8">
           ¿Hablamos? Estoy abierto a oportunidades y colaboraciones.
         </p>
         <div className="flex flex-wrap justify-center gap-3">

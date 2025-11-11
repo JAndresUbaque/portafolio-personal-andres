@@ -1,42 +1,93 @@
 @import "tailwindcss";
 
-/* Global light futuristic theme adjustments */
+/* Tema Aurora Tech Neutral - Repaso: Esto define un tema global con variables para reutilizar colores y estilos en todo el sitio. */
 :root {
-  /* Paleta azul principal */
-  --accent: #2563eb; /* azul */
-  --accent-2: #1d4ed8; /* azul más profundo */
-  --bg-start: #f2f5f9; /* gris claro futurista */
-  --bg-end: #e6ecf3;   /* gris ligeramente más oscuro */
+  /* Acentos - Por qué: Estos colores dan calidez futurista y se usan en títulos, botones y hovers para consistencia. */
+  --accent: #FFB347;      /* Ámbar moderno (principal) - Qué hace: Se aplica en clases como .neon-text. */
+  --accent-2: #FF8C32;    /* Naranja más fuerte para hover - Qué hace: Cambia color en interacciones, repitiendo el concepto de hover para dinamismo. */
+  --accent-green: #4CAF50; /* Verde elegante para resaltar habilidades/progreso - Por qué: Personaliza tu perfil de transición (crecimiento como dev). */
+
+  /* Fondos - Por qué: Crea un gradiente suave para el fondo general, mejorando elegancia sin distraer del contenido. */
+  --bg-start: #1A1E26;    /* Gris oscuro más profundo para elegancia - Qué hace: Inicio del gradiente en body. */
+  --bg-end: #282D36;      /* Gris azulado sutil - Qué hace: Fin del gradiente, repitiendo para profundidad visual. */
+  
+  /* Superficies - Por qué: Para paneles y tarjetas, asegura contraste legible. */
+  --surface-color: #303540; /* Paneles / tarjetas - Qué hace: Fondo base para .glass. */
+  --surface-hover: #404550; /* Hover con leve elevación - Qué hace: Cambia en hover, repitiendo transición. */
+
+  /* Tipografía - Por qué: Mejora legibilidad con colores de alto contraste. */
+  --text-primary: #FFFFFF;  /* Blanco puro para textos principales - Qué hace: Aplica a body color, evitando grises claros en oscuros. */
+  --text-secondary: #a2acbc; /* Gris claro más visible - Qué hace: Para subtítulos, repitiendo para evitar fatiga visual. */
 }
 
 html, body, #root {
-  height: 100%;
+  height: 100%; /* Por qué: Asegura que el sitio ocupe toda la pantalla; qué hace: Evita espacios en blanco innecesarios. */
 }
 
+/* Fondo general con gradiente neutro - Por qué: Fondo base para todo el body, usando variables para consistencia. */
 body {
-  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%);
-  color: #0f172a; /* slate-900 */
+  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%); /* Qué hace: Crea gradiente diagonal suave; repitiendo variables como var(--bg-start). */
+  color: var(--text-primary); /* Qué hace: Texto principal en blanco puro. */
+  font-family: 'Poppins', sans-serif; /* Por qué: Fuente legible y moderna. */
+  line-height: 1.6; /* Nuevo: Espaciado entre líneas para mejor lectura - Qué hace: Aumenta legibilidad en párrafos. */
 }
 
-/* Remove any accidental gutters/lines on edges */
-* {
-  box-sizing: border-box;
+/* --- Hero Section con fondo e imagen --- Por qué: Oscurece la imagen para que texto resalte, mejorando legibilidad. */
+#hero {
+  background-image:
+    linear-gradient(to top, rgba(26,30,38,0.85), rgba(40,45,54,0.65), rgba(26,30,38,0.85)), /* Qué hace: Capa opaca sobre imagen; repitiendo rgba para gradiente. */
+    url('/src/assets/codehero.png');
+  background-size: cover; /* Qué hace: Cubre todo el área. */
+  background-position: center; /* Qué hace: Centra la imagen. */
+  background-repeat: no-repeat; /* Qué hace: Evita repetición. */
 }
 
-/* Accent utilities */
+/* --- Textos y acentos --- Por qué: Clases reutilizables para colores consistentes. */
 .accent-text {
-  color: var(--accent);
+  color: var(--accent); /* Qué hace: Aplica ámbar; repitiendo var(--accent) para títulos. */
 }
+
 .accent-bg {
-  background-color: var(--accent);
+  background-color: var(--accent); /* Qué hace: Fondo ámbar. */
+  color: #fff; /* Blanco para contraste. */
 }
+
+/* --- Titulares brillantes --- Por qué: Efecto glow futurista sutil para títulos. */
 .neon-text {
-  color: var(--accent);
-  text-shadow: 0 0 10px rgba(37, 99, 235, 0.40), 0 0 20px rgba(37, 99, 235, 0.25);
+  color: var(--accent); /* Qué hace: Color base ámbar; repitiendo variable. */
+  text-shadow: 0 0 6px rgba(255,179,71,0.4), 0 0 16px rgba(255,140,50,0.2); /* Qué hace: Sombra glow; repitiendo rgba para capas. */
 }
+
+/* --- Superficies translúcidas (tarjetas, paneles) --- Por qué: Glassmorphism para look moderno y elegante. */
 .glass {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(15, 23, 42, 0.06);
+  background: rgba(48,53,64,0.75); /* Qué hace: Fondo translúcido; ajustado para más opacidad y legibilidad. */
+  backdrop-filter: blur(8px); /* Qué hace: Difumina fondo detrás; reducido para sutileza. */
+  border: 1px solid rgba(255,255,255,0.1); /* Qué hace: Borde sutil. */
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.3), /* Sombra suave externa. */
+    inset 0 0 6px rgba(255,255,255,0.05); /* Glow interno. */
+  border-radius: 16px; /* Qué hace: Bordes más redondeados para elegancia. */
+  transition: all 0.4s ease; /* Qué hace: Anima cambios; repitiendo transition para fluidez en hover. */
+}
+
+.glass:hover {
+  transform: translateY(-4px); /* Qué hace: Eleva ligeramente en hover. */
+  box-shadow:
+    0 8px 16px rgba(0,0,0,0.4), /* Sombra más profunda. */
+    0 0 24px rgba(255,179,71,0.15); /* Glow con ámbar; repitiendo rgba. */
+}
+
+/* --- Barras de habilidad --- Por qué: Estilos para barras en Habilidades, con verde para personalización. */
+.skill-bar-track {
+  background-color: var(--surface-hover); /* Qué hace: Fondo gris para la barra vacía; repitiendo variable. */
+  border-radius: 6px; /* Bordes redondeados. */
+  overflow: hidden; /* Evita desbordes. */
+  height: 10px; /* Aumentado para visibilidad. */
+}
+
+.skill-bar-progress {
+  background: linear-gradient(90deg, var(--accent), var(--accent-green)); /* Qué hace: Gradiente ámbar a verde; repitiendo variables para progreso. */
+  height: 100%; /* Llena la altura. */
+  transition: width 1.5s ease; /* Anima el ancho; repitiendo transition para efecto suave. */
+  border-radius: 6px; /* Bordes consistentes. */
 }

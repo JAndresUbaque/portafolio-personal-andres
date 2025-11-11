@@ -5,7 +5,6 @@ function Services() {
   const services = [
     { title: 'Desarrollo Web', description: 'Creación de sitios web responsivos y modernos usando HTML, CSS, JS y React, adaptados a tus necesidades empresariales.' },
     { title: 'Páginas Empresariales', description: 'Diseño de webs completas para empresas, con enfoque en marketing digital y visibilidad, basado en mi experiencia en emprendimiento.' },
-    // Agrega más: Landing Pages, etc.
   ];
 
   return (

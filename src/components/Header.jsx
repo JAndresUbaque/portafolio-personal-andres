@@ -9,7 +9,7 @@ function Header() {
         transition={{duration:0.5}}>
             <nav className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
                 <a href="#hero" className="text-xl font-bold tracking-tight">
-                    <span className="accent-text">Andrés</span> Ubaque
+                    <span className="accent-text">&lt; Andrés</span> Ubaque &gt;
                 </a>
                 <ul className='hidden md:flex items-center gap-6 text-sm'>
                     <li><a href='#about' className="hover:text-slate-700">Sobre mí</a></li>
