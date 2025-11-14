@@ -1,15 +1,13 @@
 {
-  "name": "portafolio-andres",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "homepage": "https://JAndresUbaque.github.io/portafolio-personal-andres",
+  "homepage": "https://github.com/JAndresUbaque/portafolio-personal-andres",
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.17",

@@ -9,10 +9,10 @@ function TimelineItem({ title, subtitle, period, description }) {
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="absolute left-0 top-2 w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--accent)' }} />
+      <div className="absolute left-0 top-2 w-3 h-3 rounded-full" style={{ backgroundColor: 'var(--accent-2' }} />
       <h3 className="text-xl font-semibold" style={{ color: 'var(--accent)' }}>{title}</h3>
-      <div className="text-slate-900 font-medium">{subtitle} • {period}</div>
-      <p className="text-slate-700 mt-1">{description}</p>
+      <div className="text-green-300 font-medium">{subtitle} • {period}</div>
+      <p className="text-gray-400 mt-1">{description}</p>
     </motion.div>
   );
 }

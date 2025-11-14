@@ -21,26 +21,44 @@
 }
 
 html, body, #root {
-  height: 100%; /* Por qué: Asegura que el sitio ocupe toda la pantalla; qué hace: Evita espacios en blanco innecesarios. */
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-/* Fondo general con gradiente neutro - Por qué: Fondo base para todo el body, usando variables para consistencia. */
+/* Fondo general fijo y continuo */
 body {
-  background: linear-gradient(135deg, var(--bg-start) 0%, var(--bg-end) 100%); /* Qué hace: Crea gradiente diagonal suave; repitiendo variables como var(--bg-start). */
-  color: var(--text-primary); /* Qué hace: Texto principal en blanco puro. */
-  font-family: 'Poppins', sans-serif; /* Por qué: Fuente legible y moderna. */
-  line-height: 1.6; /* Nuevo: Espaciado entre líneas para mejor lectura - Qué hace: Aumenta legibilidad en párrafos. */
+  background: linear-gradient(125deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  background-attachment: fixed; /* 👈 hace que el fondo se quede quieto al hacer scroll */
+  background-repeat: no-repeat; /* 👈 evita reinicio del gradiente */
+
+  background-position: center;
+  
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* previene scroll lateral si hay sombras o efectos */
 }
 
 /* --- Hero Section con fondo e imagen --- Por qué: Oscurece la imagen para que texto resalte, mejorando legibilidad. */
 #hero {
   background-image:
-    linear-gradient(to top, rgba(26,30,38,0.85), rgba(40,45,54,0.65), rgba(26,30,38,0.85)), /* Qué hace: Capa opaca sobre imagen; repitiendo rgba para gradiente. */
+    linear-gradient(to top, rgba(26,30,38,0.85), rgba(40,45,54,0.45), rgba(26,30,38,0.85)), /* Qué hace: Capa opaca sobre imagen; repitiendo rgba para gradiente. */
     url('/src/assets/codehero.png');
   background-size: cover; /* Qué hace: Cubre todo el área. */
   background-position: center; /* Qué hace: Centra la imagen. */
   background-repeat: no-repeat; /* Qué hace: Evita repetición. */
+
+   border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  /* Opcional: para que no se salgan los bordes si hay contenido dentro */
+  overflow: hidden;
+
 }
+
+
 
 /* --- Textos y acentos --- Por qué: Clases reutilizables para colores consistentes. */
 .accent-text {
@@ -78,6 +96,7 @@ body {
 }
 
 /* --- Barras de habilidad --- Por qué: Estilos para barras en Habilidades, con verde para personalización. */
+
 .skill-bar-track {
   background-color: var(--surface-hover); /* Qué hace: Fondo gris para la barra vacía; repitiendo variable. */
   border-radius: 6px; /* Bordes redondeados. */

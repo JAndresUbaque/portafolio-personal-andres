@@ -12,13 +12,13 @@ function Certifications() {
   return (
     <motion.section 
       id="certifications"
-      className="py-20 text-slate-900"
+      className="py-15 text-slate-900"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-6 text-center neon-text">Certificaciones y Cursos</h2>
+        <h2 className="text-4xl font-bold mb-9 text-center neon-text">Certificaciones y Cursos</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {certs.map((cert, index) => (
             <CertCard key={index} title={cert.title} institution={cert.institution} year={cert.year} />

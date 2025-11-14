@@ -41,12 +41,12 @@ function Projects() {
       transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-6 text-center">
+        <h2 className="text-4xl font-bold mb-6 text-center neon-text">
           Proyectos
         </h2>
 
         <div className="mt-10">
-          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent)]">Práctica</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent-2)]">Práctica</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {practiceProjects.map((project, index) => (
               <ProjectCard key={index} title={project.title} description={project.description} demoLink={project.demoLink} codeLink={project.codeLink} />
@@ -55,7 +55,7 @@ function Projects() {
         </div>
 
         <div className="mt-14">
-          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent)]">Empresariales</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-[color:var(--accent-2)]">Empresariales</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {businessProjects.map((project, index) => (
               <ProjectCard key={index} title={project.title} description={project.description} demoLink={project.demoLink} codeLink={project.codeLink} />
