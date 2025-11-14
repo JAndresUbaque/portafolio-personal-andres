@@ -1,16 +1,60 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 function ProjectCard({ title, description, demoLink, codeLink }) {
   return (
-    <motion.div 
-      className="glass p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-      whileHover={{ scale: 1.02 }}
+    <motion.div
+      className="
+        glass p-7 rounded-2xl shadow-lg 
+        hover:shadow-xl transition-all duration-300
+        border border-white/10
+      "
+      whileHover={{ y: -5 }}
     >
-      <h3 className="text-2xl font-bold mb-2" style={{color: 'var(--accent)'}}>{title}</h3>
-      <p className="text-base md:text-lg mb-5 text-blue-200">{description}</p>
-      <div className="flex justify-center gap-3">
-        <a href={demoLink} className=" px-4 py-2 rounded-md text-white " style={{backgroundColor: 'var(--accent-2)'}}>Ver Demo</a>
-        <a href={codeLink} className=" px-4 py-2 rounded-md border" style={{borderColor: 'var(--accent-2)', color: 'var(--accent-2)'}}>Ver Código</a>
+      {/* TÍTULO */}
+      <h3
+        className="text-2xl font-bold mb-2 tracking-tight"
+        style={{ color: "var(--accent)" }}
+      >
+        {title}
+      </h3>
+
+      {/* DESCRIPCIÓN */}
+      <p className="text-blue-100 text-base md:text-lg leading-relaxed mb-6">
+        {description}
+      </p>
+
+      {/* BOTONES */}
+      <div className="flex justify-center gap-4">
+        {/* Botón Demo */}
+        <a
+          href={demoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            px-5 py-2.5 rounded-lg text-white font-medium
+            hover:opacity-90 transition-all duration-200
+          "
+          style={{ backgroundColor: "var(--accent-2)" }}
+        >
+          Ver Demo
+        </a>
+
+        {/* Botón Código */}
+        <a
+          href={codeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+            px-5 py-2.5 rounded-lg font-medium
+            border hover:bg-white/5 transition-all duration-200
+          "
+          style={{
+            borderColor: "var(--accent-2)",
+            color: "var(--accent-2)",
+          }}
+        >
+          Ver Código
+        </a>
       </div>
     </motion.div>
   );

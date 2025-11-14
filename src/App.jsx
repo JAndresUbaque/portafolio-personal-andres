@@ -5,7 +5,7 @@ import Projects from './components/Projects';
 import Certifications from './components/Certifications';
 import Services from './components/Services';
 import Contact from './components/Contact';
-import SkillsAndStats from './components/SkillsAndStats';
+import Skill from './components/Skill';
 import Timeline from './components/Timeline';
 import './App.css';
 
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <SkillsAndStats />
+      <Skill />
       <Projects />
       <Certifications/>
       <Timeline/>

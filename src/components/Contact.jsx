@@ -15,59 +15,40 @@ function Contact() {
         <p className="text-gray-200 mb-8">
           ¿Hablamos? Estoy abierto a oportunidades y colaboraciones.
         </p>
+
         <div className="flex flex-wrap justify-center gap-3">
-          <a 
-            href="mailto:andres@example.com" 
-            className="flex items-center justify-center w-12 h-12 sm:w-auto sm:px-4 sm:py-2 rounded-md text-white" 
-            style={{ backgroundColor: 'var(--accent-2)' }}
-            aria-label="Email"
-          >
-            <FaEnvelope className="text-xl sm:text-base" />
-            <span className="hidden sm:inline ml-2">Email</span>
-          </a>
-          <a 
-            href="https://linkedin.com/in/tu-perfil" 
-            target="_blank" 
-            rel="noreferrer" 
-            className="flex items-center justify-center w-12 h-12 sm:w-auto sm:px-4 sm:py-2 rounded-md border" 
-            style={{ borderColor: 'var(--accent-2)', color: 'var(--accent)' }}
-            aria-label="LinkedIn"
-          >
-            <FaLinkedin className="text-xl sm:text-base" />
-            <span className="hidden sm:inline ml-2">LinkedIn</span>
-          </a>
-          <a 
-            href="https://github.com/JAndresUbaque" 
-            target="_blank" 
-            rel="noreferrer" 
-            className="flex items-center justify-center w-12 h-12 sm:w-auto sm:px-4 sm:py-2 rounded-md border" 
-            style={{ borderColor: 'var(--accent-2)', color: 'var(--accent)' }}
-            aria-label="GitHub"
-          >
-            <FaGithub className="text-xl sm:text-base" />
-            <span className="hidden sm:inline ml-2">GitHub</span>
-          </a>
-          <a 
-            href="https://wa.me/573000000000" 
-            target="_blank" 
-            rel="noreferrer" 
-            className="flex items-center justify-center w-12 h-12 sm:w-auto sm:px-4 sm:py-2 rounded-md border" 
-            style={{ borderColor: 'var(--accent-2)', color: 'var(--accent)' }}
-            aria-label="WhatsApp"
-          >
-            <FaWhatsapp className="text-xl sm:text-base" />
-            <span className="hidden sm:inline ml-2">WhatsApp</span>
-          </a>
-          <a 
-            href="/cv-andres-ubaque.pdf" 
-            download 
-            className="flex items-center justify-center w-12 h-12 sm:w-auto sm:px-4 sm:py-2 rounded-md border" 
-            style={{ borderColor: 'var(--accent-2)', color: 'var(--accent)' }}
-            aria-label="Descargar CV"
-          >
-            <FaDownload className="text-xl sm:text-base" />
-            <span className="hidden sm:inline ml-2">Descargar CV</span>
-          </a>
+          {[
+            { icon: FaEnvelope, label: 'Email', link: 'mailto:andres@example.com', bg: 'var(--accent-2)' },
+            { icon: FaLinkedin, label: 'LinkedIn', link: 'https://linkedin.com/in/tu-perfil', border: true },
+            { icon: FaGithub, label: 'GitHub', link: 'https://github.com/JAndresUbaque', border: true },
+            { icon: FaWhatsapp, label: 'WhatsApp', link: 'https://wa.me/573000000000', border: true },
+            { icon: FaDownload, label: 'CV', link: '/cv-andres-ubaque.pdf', border: true, download: true },
+          ].map((c, idx) => {
+            const Icon = c.icon;
+            return (
+              <motion.a
+                key={idx}
+                href={c.link}
+                download={c.download ? true : undefined}
+                target={c.download ? '_self' : '_blank'}
+                rel={c.download ? undefined : 'noreferrer'}
+                className={`flex items-center justify-center sm:px-4 sm:py-2 px-4 py-3 rounded-md text-white border transition-all duration-300`}
+                style={{
+                  backgroundColor: c.border ? 'transparent' : c.bg,
+                  borderColor: c.border ? 'var(--accent-2)' : 'transparent',
+                  color: c.border ? 'var(--accent)' : '#fff',
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+                aria-label={c.label}
+              >
+                <Icon className="text-xl sm:text-base" />
+                <span className="hidden sm:inline ml-2">{c.label}</span>
+              </motion.a>
+            );
+          })}
         </div>
       </div>
     </motion.section>
