@@ -6,7 +6,7 @@
   --accent: #FFB347;      /* Ámbar moderno (principal) - Qué hace: Se aplica en clases como .neon-text. */
   --accent-2: #FF8C32;    /* Naranja más fuerte para hover - Qué hace: Cambia color en interacciones, repitiendo el concepto de hover para dinamismo. */
   --accent-green: #4CAF50;
-  --accent-3: #d4effbf1; /* Verde elegante para resaltar habilidades/progreso - Por qué: Personaliza tu perfil de transición (crecimiento como dev). */
+  --accent-3: #8ca2c8; /* Verde elegante para resaltar habilidades/progreso - Por qué: Personaliza tu perfil de transición (crecimiento como dev). */
 
   /* Fondos - Por qué: Crea un gradiente suave para el fondo general, mejorando elegancia sin distraer del contenido. */
   --bg-start: #1A1E26;    /* Gris oscuro más profundo para elegancia - Qué hace: Inicio del gradiente en body. */

@@ -34,7 +34,7 @@ function CertCard({ title, institution, year }) {
           {title}
         </h3>
 
-        <p className="text-gray-300 text-sm leading-tight">
+        <p className="text-blue-100 text-sm leading-tight">
           {institution}
         </p>
 

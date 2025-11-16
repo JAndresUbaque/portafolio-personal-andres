@@ -61,7 +61,7 @@ export default function Services() {
                   {title}
                 </h3>
 
-                <p className="text-blue-200 text-lg leading-relaxed">
+                <p className="text-blue-100 text-justify text-lg leading-relaxed">
                   {description}
                 </p>
               </div>

@@ -47,7 +47,7 @@ function About() {
 
           {/* Experiencia profesional */}
           <motion.div
-            className="space-y-5"
+            className="space-y-5 "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
@@ -59,7 +59,7 @@ function About() {
               Experiencia Laboral Destacada
             </h3>
 
-            <div className="space-y-4">
+            <div className="space-y-4 text-justify">
 
               <div className="border-l-4 border-[var(--accent)] pl-4">
                 <p className="text-lg text-gray-300">

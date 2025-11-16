@@ -13,14 +13,14 @@ function Header() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
         >
-            <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
 
                 {/* LOGO */}
                 <a
                     href="#hero"
                     className="text-xl font-semibold tracking-tight hover:opacity-80 transition"
                 >
-                    <span className="text-yellow-400">&lt; Andrés</span> Ubaque / Dev &gt;
+                    <span className="text-yellow-400 text-left">&lt; Andrés</span> Ubaque / Dev &gt;
                 </a>
 
                 {/* MENÚ DESKTOP */}

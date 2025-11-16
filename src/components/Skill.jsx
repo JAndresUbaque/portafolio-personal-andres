@@ -7,9 +7,9 @@ function StatCard({ icon: Icon, label, value, helper }) {
       className="glass p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
       whileHover={{ scale: 1.02 }}
     >
-      <div className="flex items-center gap-16">
-        <div className="p-4 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(90,12,35,0.08)', color: 'var(--accent)' }}>
-          <Icon className="w-6 h-6" />
+      <div className="flex items-center gap-12"> 
+        <div className="p-4 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255, 204, 0, 0.09)', color: 'var(--accent)' }}>
+          <Icon className="w-7 h-7" />
         </div>
         <div className="flex flex-col items-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--accent)' }}>{value}</div>
@@ -58,7 +58,7 @@ export default function Skill() {
       <div className="max-w-6xl mx-auto px-6">
         {/* --- Bloque de métricas --- */}
         <h2 className="text-4xl font-bold mb-6 text-center neon-text">Impacto y Habilidades</h2>
-        <p className="text-center text-slate-300 max-w-3xl mx-auto mb-10">
+        <p className="text-justify md:text-center text-slate-300 max-w-3xl mx-auto mb-10">
           Combinando React, JavaScript, HTML y CSS con visión analítica y enfoque en rendimiento, 
           cada entrega busca balance entre experiencia de usuario, claridad visual y eficiencia técnica.
         </p>

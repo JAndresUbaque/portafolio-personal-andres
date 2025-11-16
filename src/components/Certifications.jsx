@@ -35,7 +35,7 @@ function Certifications() {
         </h2>
 
         {/* Subtítulo descriptivo */}
-        <p className="text-center text-blue-200 max-w-2xl mx-auto mb-12">
+        <p className="text-justify text-gray-100 max-w-2xl mx-auto mb-12">
           Formación continua que refuerza mis habilidades técnicas y mi perfil profesional,
           con enfoque en desarrollo web, buenas prácticas y gestión de proyectos.
         </p>
