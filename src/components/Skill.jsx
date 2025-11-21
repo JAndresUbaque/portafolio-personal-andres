@@ -13,7 +13,7 @@ function StatCard({ icon: Icon, label, value, helper }) {
         </div>
         <div className="flex flex-col items-center">
           <div className="text-2xl font-bold" style={{ color: 'var(--accent)' }}>{value}</div>
-          <div className="text-blue-200 text-center">{label}</div>
+          <div className="text-white text-center">{label}</div>
           {helper && <div className="text-green-400 text-sm mt-1 text-center">{helper}</div>}
         </div>
       </div>
@@ -25,10 +25,10 @@ function SkillRow({ label, level }) {
   return (
     <div className="mb-3">
       <div className="flex justify-between mb-1">
-        <span className="text-sm font-medium text-blue-200">{label}</span>
+        <span className="text-sm font-medium text-gray-100">{label}</span>
         <span className="text-sm text-green-400">{level}%</span>
       </div>
-      <div className="h-2 w-full rounded-full bg-slate-300/60 overflow-hidden">
+      <div className="h-2 w-full rounded-full bg-gray-300/60 overflow-hidden">
         <motion.div
           className="h-full rounded-full bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400"
           initial={{ width: 0 }}
@@ -58,14 +58,14 @@ export default function Skill() {
       <div className="max-w-6xl mx-auto px-6">
         {/* --- Bloque de métricas --- */}
         <h2 className="text-4xl font-bold mb-6 text-center neon-text">Impacto y Habilidades</h2>
-        <p className="text-justify md:text-center text-slate-300 max-w-3xl mx-auto mb-10">
+        <p className="text-justify md:text-center text-gray-100 max-w-3xl mx-auto mb-10">
           Combinando React, JavaScript, HTML y CSS con visión analítica y enfoque en rendimiento, 
           cada entrega busca balance entre experiencia de usuario, claridad visual y eficiencia técnica.
         </p>
 
 
         {/* --- Bloque de habilidades --- */}
-        <ul className="flex justify-center grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 text-gray-300">
+        <ul className="flex justify-center grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 text-gray-200">
           <li className="flex items-center"><FaHtml5 className="text-3xl mr-2 text-orange-500" /> HTML</li>
           <li className="flex items-center"><FaCss3Alt className="text-3xl mr-2 text-blue-500" /> CSS</li>
           <li className="flex items-center"><FaJs className="text-3xl mr-2 text-yellow-500" /> JavaScript</li>

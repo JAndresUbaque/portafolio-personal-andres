@@ -62,7 +62,7 @@ function About() {
             <div className="space-y-4 text-justify">
 
               <div className="border-l-4 border-[var(--accent)] pl-4">
-                <p className="text-lg text-gray-300">
+                <p className="text-lg text-gray-200">
                   <span className="font-semibold text-white">HILADA (Mar 2024 – Ago 2024)</span>  
                   — Gestión de redes sociales, actualización de tienda virtual y creación de campañas 
                   en Instagram y Facebook, logrando aumentar la visibilidad de productos.
@@ -70,7 +70,7 @@ function About() {
               </div>
 
               <div className="border-l-4 border-[var(--accent)] pl-4">
-                <p className="text-lg text-gray-300">
+                <p className="text-lg text-gray-200">
                   <span className="font-semibold text-white text-justify    ">JEM S.A.S (Ene 2022 – Jun 2024)</span>  
                   — Coordinación de proyectos arquitectónicos, elaboración de planos y gestión 
                   de trámites. Obtuve aprobaciones de licencias sin observaciones.

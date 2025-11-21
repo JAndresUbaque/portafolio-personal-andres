@@ -19,7 +19,7 @@ function ProjectCard({ title, description, demoLink, codeLink }) {
       </h3>
 
       {/* DESCRIPCIÓN */}
-      <p className="text-blue-100 text-base md:text-lg leading-relaxed mb-6">
+      <p className="text-gray-200 text-base md:text-lg leading-relaxed mb-6">
         {description}
       </p>
 

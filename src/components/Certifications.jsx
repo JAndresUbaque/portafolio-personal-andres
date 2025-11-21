@@ -4,20 +4,42 @@ import CertCard from "./CertCard";
 function Certifications() {
   const certs = [
     { 
-      title: "Curso de Fundamentos de JavaScript", 
+      title: "Curso de React.js", 
       institution: "Platzi", 
       year: "2025" 
     },
     { 
-      title: "Diplomado en Gerencia de Proyectos", 
-      institution: "Politécnico de Colombia (Virtual)", 
-      year: "2022" 
+      title: "Curso de Bases de Datos con SQL", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Cusro de Diseño para Programadores", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Curso de Asincronismo con JavaScript", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Frontend Developer", 
+      institution: "Platzi", 
+      year: "2025" 
     },
     { 
       title: "Git y GitHub Profesional", 
       institution: "Platzi", 
       year: "2025" 
     },
+    { 
+      title: "Curso de Fundamentos de JavaScript", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    
+ 
   ];
 
   return (
@@ -35,7 +57,7 @@ function Certifications() {
         </h2>
 
         {/* Subtítulo descriptivo */}
-        <p className="text-justify text-gray-100 max-w-2xl mx-auto mb-12">
+        <p className="text-justify md:text-center text-gray-100 max-w-2xl mx-auto mb-12">
           Formación continua que refuerza mis habilidades técnicas y mi perfil profesional,
           con enfoque en desarrollo web, buenas prácticas y gestión de proyectos.
         </p>

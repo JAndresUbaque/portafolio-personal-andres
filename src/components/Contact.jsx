@@ -12,17 +12,17 @@ function Contact() {
     >
       <div className="max-w-6xl mx-auto px-6 text-center">
         <h2 className="text-3xl sm:text-4xl font-bold mb-6 neon-text">Contacto</h2>
-        <p className="text-gray-200 mb-8">
+        <p className="text-gray-200 py-2 mb-8">
           ¿Hablamos? Estoy abierto a oportunidades y colaboraciones.
         </p>
 
         <div className="flex flex-wrap justify-center gap-3">
           {[
-            { icon: FaEnvelope, label: 'Email', link: 'mailto:andres@example.com', bg: 'var(--accent-2)' },
-            { icon: FaLinkedin, label: 'LinkedIn', link: 'https://linkedin.com/in/tu-perfil', border: true },
+            { icon: FaEnvelope, label: 'Email', link: 'https://mail.google.com/mail/?view=cm&fs=1&to=jorge.ubaque55@gmail.com', bg: 'var(--accent-2)' },
+            { icon: FaLinkedin, label: 'LinkedIn', link: 'https://www.linkedin.com/in/jorge-andres-ubaque-garzon-9a8256226/', border: true },
             { icon: FaGithub, label: 'GitHub', link: 'https://github.com/JAndresUbaque', border: true },
-            { icon: FaWhatsapp, label: 'WhatsApp', link: 'https://wa.me/573000000000', border: true },
-            { icon: FaDownload, label: 'CV', link: '/cv-andres-ubaque.pdf', border: true, download: true },
+            { icon: FaWhatsapp, label: 'WhatsApp', link: 'https://wa.me/573045459058', border: true },
+            { icon: FaDownload, label: 'CV', link:'/portafolio-personal-andres/cv-andres-ubaque.pdf', border: true, download: true },
           ].map((c, idx) => {
             const Icon = c.icon;
             return (

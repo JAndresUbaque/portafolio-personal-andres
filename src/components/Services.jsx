@@ -1,74 +1,93 @@
-import { motion } from 'framer-motion';
-import { Rocket, Building2 } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Monitor, Smartphone, ShoppingBag, Brush } from "lucide-react";
+
+const services = [
+  {
+    title: "Sitios Web Modernos",
+    desc: "Desarrollos rápidos, seguros y con un diseño visual que transmite profesionalismo. Ideales para negocios que buscan tener presencia digital sólida.",
+    icon: Monitor,
+  },
+  {
+    title: "Landing Pages que Convierten",
+    desc: "Páginas diseñadas para captar clientes. Mensajes claros, estructura optimizada y enfoque en resultados.",
+    icon: Smartphone,
+  },
+  {
+    title: "Diseño Visual Profesional",
+    desc: "Mejoro la presentación de tu marca con interfaces limpias, estética cuidada y una experiencia fácil de navegar.",
+    icon: Brush,
+  },
+  {
+    title: "Tiendas Virtuales (Próximamente)",
+    desc: "E-commerce con catálogo, pagos y carrito de compras. Una solución completa para vender online.",
+    icon: ShoppingBag,
+  },
+];
 
 export default function Services() {
-
-  const services = [
-    {
-      title: "Landing Pages Modernas",
-      description:
-        "Diseño centrado en conversión, carga rápida, estructura clara y componentes optimizados con React y Vite.",
-      Icon: Rocket,
-    },
-    {
-      title: "Sitios Corporativos",
-      description:
-        "Webs empresariales profesionales con énfasis en branding, estructura sólida, confianza y posicionamiento.",
-      Icon: Building2,
-    },
-  ];
-
   return (
-    <motion.section
-      id="services"
-      className="py-12 text-slate-900"
-      initial={{ opacity: 0, y: 50 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-10 text-center neon-text">
-          Servicios
-        </h2>
+    <section id="services" className="py-20 px-6 md:px-10">
+      
+      {/* Título */}
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="text-3xl md:text-4xl font-bold text-center neon-text"
+      >
+        Servicios
+      </motion.h2>
 
-        <div className="space-y-10 py-8">
-          {services.map(({ title, description, Icon }, index) => (
-            <motion.div
-              key={index}
-              className="flex items-start gap-6 p-4 md:p-6 rounded-xl backdrop-blur-md
-                         bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300"
-              initial={{ opacity: 0, x: -25 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              {/* ICONO */}
-              <div
-                className="p-4 rounded-xl flex items-center justify-center shadow-inner"
-                style={{
-                  backgroundColor: "rgba(255,255,255,0.06)",
-                  color: "var(--accent)",
-                }}
-              >
-                <Icon size={42} strokeWidth={1.5} />
-              </div>
+      {/* Subtítulo */}
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-center text-gray-300 max-w-2xl mx-auto mt-3"
+      >
+        Soluciones claras y profesionales para que tu negocio tenga presencia real en internet.
+      </motion.p>
 
-              {/* TEXTO */}
-              <div>
-                <h3
-                  className="text-2xl font-bold mb-1"
-                  style={{ color: "var(--accent-2)" }}
-                >
-                  {title}
-                </h3>
+      {/* GRID */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
 
-                <p className="text-blue-100 text-justify text-lg leading-relaxed">
-                  {description}
-                </p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
+        {services.map(({ title, desc, icon: Icon }, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+            viewport={{ once: true }}
+            className="relative group p-6 rounded-2xl border border-white/10 bg-white/5
+                       backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+          >
+            {/* Glow neon suave */}
+            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                            bg-[var(--accent)]/10 blur-2xl -z-10"></div>
+
+            {/* Icono */}
+            <div className="flex items-center justify-center mb-4">
+              <Icon
+                size={42}
+                className="text-[var(--accent)] drop-shadow-[0_0_6px_var(--accent)]"
+              />
+            </div>
+
+            {/* Título */}
+            <h3 className="text-xl font-semibold text-[var(--accent-2)] text-center">
+              {title}
+            </h3>
+
+            {/* Descripción */}
+            <p className="text-gray-300 text-center mt-3 leading-relaxed">
+              {desc}
+            </p>
+          </motion.div>
+        ))}
+
       </div>
-    </motion.section>
+    </section>
   );
 }
