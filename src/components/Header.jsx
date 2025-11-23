@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react"; // Íconos correctos
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 function Header() {
@@ -20,7 +20,7 @@ function Header() {
                     href="#hero"
                     className="text-xl font-semibold tracking-tight hover:opacity-80 transition"
                 >
-                    <span className="text-yellow-400 text-left">&lt; Andrés</span> Ubaque / Dev &gt;
+                    <span className="text-yellow-400">&lt; Andrés</span> Ubaque / Dev &gt;
                 </a>
 
                 {/* MENÚ DESKTOP */}
@@ -31,15 +31,16 @@ function Header() {
                     <li><a href="#services" className="hover:text-yellow-400 transition">Servicios</a></li>
                     <li>
                         <a 
-                            href="#contact" 
-                            className="px-4 py-2 rounded-xl bg-yellow-400/20 border border-yellow-400/40 hover:bg-yellow-400/30 hover:border-yellow-400/60 transition"
+                            href="#contact"
+                            className="px-4 py-2 rounded-xl bg-yellow-400/20 border border-yellow-400/40
+                                       hover:bg-yellow-400/30 hover:border-yellow-400/60 transition"
                         >
                             Contacto
                         </a>
                     </li>
                 </ul>
 
-                {/* Botón hamburguesa */}
+                {/* BOTÓN HAMBURGUESA */}
                 <button
                     onClick={toggleMenu}
                     className="md:hidden p-2 rounded-lg bg-yellow-500/80 text-white hover:bg-yellow-500 transition"
@@ -48,33 +49,34 @@ function Header() {
                 </button>
             </nav>
 
-            {/* Menú móvil */}
-<motion.div
-    initial={{ height: 0, opacity: 0 }}
-    animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
-    transition={{ duration: 0.3 }}
-    className="md:hidden overflow-hidden absolute top-full right-8 z-40" >
-    <ul className="flex flex-col bg-gray-800/90 backdrop-blur-lg rounded-3xl p-4 shadow-lg border border-yellow-300/40 w-53"> 
-        {[
-            { text: "Inicio", href: "#hero" },
-            { text: "Sobre mí", href: "#about" },
-            { text: "Proyectos", href: "#projects" },
-            { text: "Servicios", href: "#services" },
-            { text: "Contacto", href: "#contact" }
-        ].map((item) => (
-            <li key={item.text} className="w-full">
-                <a
-                    href={item.href}
-                    onClick={toggleMenu}
-                    className="block p-2 rounded-xl text-gray-300 text-lg font-medium cursor-pointer 
-                               hover:bg-yellow-100 hover:text-yellow-600 transition"  // Repito: rounded-xl (no x1, typo corregido), hover para efecto glow futurista
-                >
-                    {item.text}
-                </a>
-            </li>
-        ))}
-    </ul>
-</motion.div>
+            {/* MENÚ MÓVIL */}
+            <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="md:hidden overflow-hidden absolute top-full right-4 z-40"
+            >
+                <ul className="flex flex-col bg-gray-800/90 backdrop-blur-lg rounded-3xl p-4 shadow-lg border border-yellow-300/40 w-56">
+                    {[
+                        { text: "Inicio", href: "#hero" },
+                        { text: "Sobre mí", href: "#about" },
+                        { text: "Proyectos", href: "#projects" },
+                        { text: "Servicios", href: "#services" },
+                        { text: "Contacto", href: "#contact" }
+                    ].map((item) => (
+                        <li key={item.text} className="w-full">
+                            <a
+                                href={item.href}
+                                onClick={toggleMenu}
+                                className="block p-2 rounded-xl text-gray-300 text-lg font-medium
+                                           hover:bg-yellow-100 hover:text-yellow-700 transition"
+                            >
+                                {item.text}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </motion.div>
         </motion.header>
     );
 }

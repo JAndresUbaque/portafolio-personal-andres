@@ -1,17 +1,22 @@
 import { motion } from "framer-motion";
-import ProjectCard from "./ProjectCard";
+import PracticeProjectCard from "./PracticeProjectCard";
+import BusinessProjectCard from "./BusinessProjectCard";
 
 function Projects() {
   const practiceProjects = [
     {
       title: "Netflix Clone 🎬",
-      description: "Clon de Netflix construido con React, rutas dinámicas y UI modular.",
+      description:
+        "Clon de Netflix construido con React, rutas dinámicas y UI modular.",
+      img: "/images/netflix.png",
       demoLink: "#",
       codeLink: "#",
     },
     {
       title: "To-Do App",
-      description: "Aplicación de tareas con filtros, animaciones y almacenamiento local.",
+      description:
+        "Aplicación de tareas con filtros, animaciones y almacenamiento local.",
+      img: "/images/todo.png",
       demoLink: "#",
       codeLink: "#",
     },
@@ -20,25 +25,24 @@ function Projects() {
   const businessProjects = [
     {
       title: "GranAndesa 🌾",
-      description: "Sitio empresarial con diseño escalable y componentes reutilizables.",
-      demoLink: "#",
-      codeLink: "#",
+      img: "/images/granandesa.png",
+      link: "#",
     },
     {
       title: "Landing Comercial",
-      description: "Landing corporativa enfocada en conversión y experiencia visual.",
-      demoLink: "#",
-      codeLink: "#",
+      img: "/images/landing.png",
+      link: "#",
+    },
+   {
+      title: "Landing Comercial",
+      img: "/images/landing.png",
+      link: "#",
     },
   ];
 
   return (
-    <section
-      id="projects"
-      className="py-24 text-slate-100"
-    >
+    <section id="projects" className="py-24 text-slate-100">
       <div className="max-w-6xl mx-auto px-6">
-
         {/* TÍTULO PRINCIPAL */}
         <motion.h2
           className="text-4xl font-extrabold text-center neon-text mb-14 tracking-tight"
@@ -61,15 +65,16 @@ function Projects() {
             className="text-2xl font-semibold mb-6"
             style={{ color: "var(--accent-3)" }}
           >
-            PRACTICA
+            PRÁCTICA
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {practiceProjects.map((project, index) => (
-              <ProjectCard
+              <PracticeProjectCard
                 key={index}
                 title={project.title}
                 description={project.description}
+                img={project.img}
                 demoLink={project.demoLink}
                 codeLink={project.codeLink}
               />
@@ -91,19 +96,17 @@ function Projects() {
             EMPRESARIALES
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" >
             {businessProjects.map((project, index) => (
-              <ProjectCard
+              <BusinessProjectCard
                 key={index}
                 title={project.title}
-                description={project.description}
-                demoLink={project.demoLink}
-                codeLink={project.codeLink}
+                img={project.img}
+                link={project.link}
               />
             ))}
           </div>
         </motion.div>
-
       </div>
     </section>
   );

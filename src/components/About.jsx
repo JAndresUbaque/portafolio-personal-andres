@@ -36,14 +36,17 @@ function About() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            Soy <span className="font-semibold text-white te">Jorge Andrés Ubaque Garzón</span>, 
-            administrador de empresas con experiencia en gestión de proyectos, construcción 
-            y emprendimiento. Actualmente estoy en transición hacia el desarrollo 
-            <span className="font-semibold text-white"> Front-End</span>, 
-            trabajando con tecnologías como <span className="text-white">HTML, CSS, JavaScript, React y Git</span>.
-            Me caracterizo por un enfoque en resultados, pensamiento innovador y la capacidad 
-            de liderar procesos desde la planificación hasta la ejecución.
-          </motion.p>
+            Soy <span className="font-semibold text-white">Jorge Andrés Ubaque Garzón</span>, 
+            administrador de empresas y desarrollador Front-End en formación. Me especializo 
+            en crear sitios web modernos, rápidos y bien organizados utilizando 
+            <span className="text-white"> HTML, CSS, JavaScript, React y Git</span>.
+            Mi enfoque combina diseño, funcionalidad y claridad. Gracias a mi experiencia en gestión de proyectos, entiendo cómo piensa un negocio 
+            y qué debe comunicar para atraer clientes y transmitir profesionalismo.
+
+          <br /><br />
+            Hoy construyo páginas corporativas, portafolios y landing pages optimizadas, 
+           con una visión orientada a resultados y una ejecución limpia y organizada.
+              </motion.p>
 
           {/* Experiencia profesional */}
           <motion.div
