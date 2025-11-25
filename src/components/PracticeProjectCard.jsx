@@ -16,44 +16,53 @@ function PracticeProjectCard({ title, img, description, demoLink, codeLink }) {
         aspect-square w-full max-w-[320px] mx-auto
       "
     >
+      {/* Imagen */}
       <img
         src={img}
         alt={title}
         className="
-          w-full h-full object-cover
+          h-full w-full object-fill
           group-hover:scale-105 transition-all duration-500
         "
       />
 
+      {/* Overlay con descripción + botones */}
       <div
         className="
-          absolute inset-0 bg-black/50 
-          opacity-0 group-hover:opacity-100
+          absolute inset-0 
+          bg-black/65    
+          opacity-0 
+          group-hover:opacity-100 
+          active:opacity-100            
           transition-all duration-300
           flex flex-col items-center justify-center text-center px-4
         "
       >
-        <p className="text-gray-200 text-xs leading-snug mb-3">
+        <p className="text-gray-100 text-sm leading-snug mb-3">
           {description}
         </p>
 
         <div className="flex gap-2">
+          {/* Botón Demo */}
           <a
             href={demoLink}
             target="_blank"
+            rel="noopener noreferrer"
             className="
-              px-3 py-1.5 rounded-lg text-white text-xs font-medium
+              px-4 py-2.5 rounded-lg text-white text-sm font-medium
               bg-[var(--accent-2)] hover:bg-[var(--accent-2)]/80 transition
             "
           >
             Demo
           </a>
 
+          {/* Botón Código */}
           <a
             href={codeLink}
             target="_blank"
+            rel="noopener noreferrer"
             className="
-              px-3 py-1.5 rounded-lg text-xs font-medium
+              px-4 py-2.5 rounded-lg text-sm font-medium
               border transition
             "
             style={{
@@ -66,7 +75,8 @@ function PracticeProjectCard({ title, img, description, demoLink, codeLink }) {
         </div>
       </div>
 
-      <div className="absolute bottom-0 w-full bg-black/40 py-1 text-center">
+      {/* Barra inferior con título */}
+      <div className="absolute bottom-0 w-full bg-black/85 py-1 text-center">
         <h3 className="text-sm font-semibold" style={{ color: "var(--accent)" }}>
           {title}
         </h3>

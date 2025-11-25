@@ -7,41 +7,43 @@ function Projects() {
     {
       title: "Netflix Clone 🎬",
       description:
-        "Clon de Netflix construido con React, rutas dinámicas y UI modular.",
-      img: "/images/netflix.png",
-      demoLink: "#",
-      codeLink: "#",
+        "Clon de la página principal de Netflix como práctica de HTML y CSS.",
+      img: "/portafolio-personal-andres/images/netflix.png",
+      demoLink: "https://jandresubaque.github.io/clon-netflix/",
+      codeLink: "https://github.com/JAndresUbaque/clon-netflix.git",
     },
     {
-      title: "To-Do App",
+      title: "To-Do React 📝​ ",
       description:
-        "Aplicación de tareas con filtros, animaciones y almacenamiento local.",
-      img: "/images/todo.png",
-      demoLink: "#",
-      codeLink: "#",
+        "Aplicación de lista de tareas desarrollada en React, con persistencia en LocalStorage, edición en vivo y animaciones suaves.",
+      img: "/portafolio-personal-andres/images/todo.png",
+      demoLink: "https://jandresubaque.github.io/ToDo-react/",
+      codeLink: "https://github.com/JAndresUbaque/ToDo-react.git",
+    },
+    {
+      title: "Juego clásico “Adivina el número”🎲",
+      description:
+        " Juego desarrollado con JavaScript puro. Practica lógica condicional, manejo del DOM y eventos dinámicos.",
+      img: "/portafolio-personal-andres/images/play.png",
+      demoLink: "https://jandresubaque.github.io/adivina-el-numero-js/",
+      codeLink: "https://github.com/JAndresUbaque/adivina-el-numero-js.git",
     },
   ];
 
   const businessProjects = [
     {
       title: "GranAndesa 🌾",
-      img: "/images/granandesa.png",
-      link: "#",
+      description:
+        "Sitio web institucional de Granandesa, empresa dedicada a soluciones nutricionales para la porcicultura, ganadería y avicultura. Desarrollado con HTML, CSS y JavaScript, con diseño moderno y adaptable para dispositivos móviles.",
+      img: "/portafolio-personal-andres/images/granandesa.png",
+      link: "https://jandresubaque.github.io/granandesa-web/",
     },
-    {
-      title: "Landing Comercial",
-      img: "/images/landing.png",
-      link: "#",
-    },
-   {
-      title: "Landing Comercial",
-      img: "/images/landing.png",
-      link: "#",
-    },
+    
+
   ];
 
   return (
-    <section id="projects" className="py-24 text-slate-100">
+    <section id="projects" className="py-20 text-slate-100">
       <div className="max-w-6xl mx-auto px-6">
         {/* TÍTULO PRINCIPAL */}
         <motion.h2
@@ -96,13 +98,15 @@ function Projects() {
             EMPRESARIALES
           </h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" >
+          <div className="flex flex-wrap justify-center gap-6 " >
             {businessProjects.map((project, index) => (
               <BusinessProjectCard
                 key={index}
                 title={project.title}
+                description={project.description}
                 img={project.img}
                 link={project.link}
+
               />
             ))}
           </div>

@@ -24,7 +24,7 @@ function BusinessProjectCard({ title, img, description, link }) {
           <img
             src={img}
             alt={title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fill"
           />
 
           <div className="absolute bottom-0 w-full bg-black/40 py-2 text-center">
