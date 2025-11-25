@@ -32,7 +32,7 @@ function Projects() {
 
   const businessProjects = [
     {
-      title: "GranAndesa 🌾",
+      title: "Granandesa 🌾",
       description:
         "Sitio web institucional de Granandesa, empresa dedicada a soluciones nutricionales para la porcicultura, ganadería y avicultura. Desarrollado con HTML, CSS y JavaScript, con diseño moderno y adaptable para dispositivos móviles.",
       img: "/portafolio-personal-andres/images/granandesa.png",

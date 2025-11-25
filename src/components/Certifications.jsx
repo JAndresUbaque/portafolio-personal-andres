@@ -50,7 +50,7 @@ function Certifications() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
     >
-      <div className="max-w-6xl mx-auto px-6 " >
+      <div className="max-w-6xl mx-auto px-6">
         {/* Título */}
         <h2 className="text-4xl font-bold mb-6 text-center neon-text">
           Certificaciones y Cursos
@@ -63,7 +63,7 @@ function Certifications() {
         </p>
 
         {/* Grid de tarjetas */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {certs.map((cert, index) => (
             <CertCard
               key={index}

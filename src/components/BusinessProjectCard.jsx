@@ -27,7 +27,7 @@ function BusinessProjectCard({ title, img, description, link }) {
             className="w-full h-full object-fill"
           />
 
-          <div className="absolute bottom-0 w-full bg-black/40 py-2 text-center">
+          <div className="absolute bottom-0 w-full bg-black/85 py-2 text-center">
             <h3 className="text-sm font-semibold" style={{ color: "var(--accent)" }}>
               {title}
             </h3>
