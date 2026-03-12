@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "../assets/logo.png";
+
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +10,7 @@ function Header() {
 
     return (
         <motion.header
-            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/20 border-b border-yellow-400/20"
+            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/20 border-b border-yellow-400/20 "
             initial={{ y: -80, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
@@ -16,13 +18,16 @@ function Header() {
             <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
 
                 {/* LOGO */}
-                <a
-                    href="#hero"
-                    className="text-xl font-semibold tracking-tight hover:opacity-80 transition"
-                >
-                    <span className="text-yellow-400">&lt; Andrés</span> Ubaque / Dev &gt;
-                </a>
 
+            <a href="#hero" className="flex items-center gap-2 hover:opacity-80 transition">
+            <img 
+                src={logo} 
+                alt="Logo Andrés Ubaque"
+                 className="w-50 h-12 object-contain p-0 m-0"
+            
+                    />
+                </a>
+                
                 {/* MENÚ DESKTOP */}
                 <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
                     <li><a href="#about" className="hover:text-yellow-400 transition">Sobre mí</a></li>

@@ -45,7 +45,7 @@ function Certifications() {
   return (
     <motion.section
       id="certifications"
-      className="py-20 text-slate-900"
+      className="py-20 text-slate-900 max-w-6xl mx-auto px-4"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

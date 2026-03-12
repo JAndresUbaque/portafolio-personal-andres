@@ -5,7 +5,7 @@ function Contact() {
   return (
     <motion.section 
       id="contact"
-      className="py-20 text-slate-800"
+      className="py-20 text-slate-800 flex items-center justify-between"
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}

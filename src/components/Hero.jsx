@@ -4,12 +4,12 @@ function Hero() {
   return (
     <motion.section
       id="hero"
-      className="min-h-[80vh] pt-23 flex items-center justify-center px-6"
+      className="min-h-[80vh] pt-24 flex items-center justify-center px-6"
       initial={{ opacity: 0, scale: 0.92 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="relative w-full max-w-xl px-8 md:px-6 py-6 md:py-8 rounded-2xl shadow-lg backdrop-blur-md border border-white/10 bg-white/5 overflow-hidden">
+      <div className="relative w-full max-w-xl mx-auto px-8 md:px-6 py-6 md:py-8 rounded-2xl shadow-lg backdrop-blur-md border border-white/10 bg-white/5 overflow-hidden">
 
         {/* Glow solo dentro del contenedor */}
         <div className="absolute inset-0 rounded-2xl bg-gradient-to-r 

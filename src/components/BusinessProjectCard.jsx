@@ -13,7 +13,7 @@ function BusinessProjectCard({ title, img, description, link }) {
         border border-white/10 shadow-lg glass
         hover:shadow-2xl hover:border-[var(--accent)]/40
         transition-all duration-300
-        flip-card
+        flip-card 
       "
       style={{ width: "320px", height: "320px" }}
     >
