@@ -83,15 +83,15 @@ export default function Skill() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="glass p-6 rounded-xl">
             <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent-2)' }}>Frontend Core</h3>
-            <SkillRow label="React" level={65} />
-            <SkillRow label="JavaScript" level={68} />
-            <SkillRow label="HTML" level={72} />
-            <SkillRow label="CSS" level={76} />
+            <SkillRow label="React" level={25} />
+            <SkillRow label="JavaScript" level={60} />
+            <SkillRow label="HTML" level={70} />
+            <SkillRow label="CSS" level={65} />
            </div>
           <div className="glass p-6 rounded-xl">
             <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent-2)' }}>Herramientas</h3>
             <SkillRow label="Git/GitHub" level={70} />
-            <SkillRow label="Vite" level={78} />
+            <SkillRow label="Vite" level={30} />
             <SkillRow label="Accesibilidad (a11y)" level={75} />
             <SkillRow label="Performance" level={62} />
           </div>

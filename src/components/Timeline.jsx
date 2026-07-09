@@ -6,25 +6,25 @@ function Timeline() {
   const items = [
     {
       title: "Transición a Front-End",
-      subtitle: "React + JavaScript + HTML + CSS",
-      period: "2024–2025",
+      subtitle: "React + JavaScript + CSS + HTML",
+      period: "2024–2026",
       description:
         "He desarrollado proyectos funcionales usando React y Vite, creando interfaces rápidas, accesibles y optimizadas. Me enfoco en componentes reutilizables, buenas prácticas y diseño orientado al usuario para entregar soluciones claras y profesionales."
     },
-    {
+     {
+      title: "Marketing y Web Management",
+      subtitle: "HILADA",
+      period: "2024,2026",
+      description:
+        "Gestiono parte del marketing digital y desarrollo web para fortalecer la presencia inline de la marca."
+    },
+       {
       title: "Coordinación de Proyectos",
       subtitle: "JEM S.A.S",
       period: "2022–2024",
       description:
         "Lideré la gestión de proyectos y comunicación con stakeholders, asegurando claridad en entregables, tiempos y procesos. Esta experiencia fortaleció mi capacidad para documentar, planificar y trabajar bajo objetivos, habilidades que hoy aplico directamente al desarrollo web."
     },
-    {
-      title: "Marketing y Web Management",
-      subtitle: "HILADA",
-      period: "2024",
-      description:
-        "Gestioné la presencia digital de la marca, optimizando la comunicación visual y actualizando contenidos en la web. Esto me dio una visión más clara sobre experiencia de usuario, diseño visual y cómo conectar marcas con personas a través de interfaces efectivas."
-    }
   ];
 
   const containerRef = useRef(null);

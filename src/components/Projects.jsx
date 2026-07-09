@@ -5,12 +5,12 @@ import BusinessProjectCard from "./BusinessProjectCard";
 function Projects() {
   const practiceProjects = [
     {
-      title: "Netflix Clone 🎬",
-      description:
-        "Clon de la página principal de Netflix como práctica de HTML y CSS.",
-      img: "/portafolio-personal-andres/images/netflix.png",
-      demoLink: "https://jandresubaque.github.io/clon-netflix/",
-      codeLink: "https://github.com/JAndresUbaque/clon-netflix.git",
+      title: "NovaStream 🎬",
+      description:  
+        "Plataforma de streaming ficticia construida como practica únicamente con HTML, CSS y JavaScript Vanilla.",
+      img: "/public/images/NovaStream.JPG",
+      demoLink: "https://novastream-practice.netlify.app//",
+      codeLink: "https://github.com/JAndresUbaque/nova-stream.git",
     },
     {
       title: "To-Do React 📝​ ",
@@ -32,11 +32,11 @@ function Projects() {
 
   const businessProjects = [
     {
-      title: "Granandesa 🌾",
+      title: "Hilada",
       description:
-        "Sitio web institucional de Granandesa, empresa dedicada a soluciones nutricionales para la porcicultura, ganadería y avicultura. Desarrollado con HTML, CSS y JavaScript, con diseño moderno y adaptable para dispositivos móviles.",
-      img: "/portafolio-personal-andres/images/granandesa.png",
-      link: "https://jandresubaque.github.io/granandesa-web/",
+        "Mantenimiento y mejora continua de la tienda e-commerce en Shopify. Implementación de nuevas funcionalidades, optimización del diseño responsive, personalización de componentes y mejoras en la experiencia de usuario mediante HTML, CSS, JavaScript y Liquid",
+      img: "/public/images/Hilada.JPG",
+      link: "https://hilada.co/",
     },
     
 

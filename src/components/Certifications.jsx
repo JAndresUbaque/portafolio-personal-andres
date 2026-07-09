@@ -3,6 +3,16 @@ import CertCard from "./CertCard";
 
 function Certifications() {
   const certs = [
+      { 
+      title: "Diseño Web Adaptable", 
+      institution: "freeCodeCamp", 
+      year: "2026" 
+    },
+      { 
+      title: "JavaScript", 
+      institution: "freeCodeCamp", 
+      year: "2026" 
+    },
     { 
       title: "Curso de React.js", 
       institution: "Platzi", 
@@ -33,11 +43,7 @@ function Certifications() {
       institution: "Platzi", 
       year: "2025" 
     },
-    { 
-      title: "Curso de Fundamentos de JavaScript", 
-      institution: "Platzi", 
-      year: "2025" 
-    },
+  
     
  
   ];
