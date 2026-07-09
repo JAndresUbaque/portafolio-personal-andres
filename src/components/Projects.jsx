@@ -8,7 +8,7 @@ function Projects() {
       title: "NovaStream 🎬",
       description:  
         "Plataforma de streaming ficticia construida como practica únicamente con HTML, CSS y JavaScript Vanilla.",
-      img: "/public/images/NovaStream.JPG",
+      img: "/images/NovaStream.JPG",
       demoLink: "https://novastream-practice.netlify.app//",
       codeLink: "https://github.com/JAndresUbaque/nova-stream.git",
     },
@@ -16,7 +16,7 @@ function Projects() {
       title: "To-Do React 📝​ ",
       description:
         "Aplicación de lista de tareas desarrollada en React, con persistencia en LocalStorage, edición en vivo y animaciones suaves.",
-      img: "/portafolio-personal-andres/images/todo.png",
+      img: "/images/todo.png",
       demoLink: "https://jandresubaque.github.io/ToDo-react/",
       codeLink: "https://github.com/JAndresUbaque/ToDo-react.git",
     },
@@ -24,7 +24,7 @@ function Projects() {
       title: "Juego clásico “Adivina el número”🎲",
       description:
         " Juego desarrollado con JavaScript puro. Practica lógica condicional, manejo del DOM y eventos dinámicos.",
-      img: "/portafolio-personal-andres/images/play.png",
+      img: "/images/play.png",
       demoLink: "https://jandresubaque.github.io/adivina-el-numero-js/",
       codeLink: "https://github.com/JAndresUbaque/adivina-el-numero-js.git",
     },
@@ -35,7 +35,7 @@ function Projects() {
       title: "Hilada",
       description:
         "Mantenimiento y mejora continua de la tienda e-commerce en Shopify. Implementación de nuevas funcionalidades, optimización del diseño responsive, personalización de componentes y mejoras en la experiencia de usuario mediante HTML, CSS, JavaScript y Liquid",
-      img: "/public/images/Hilada.JPG",
+      img: "/images/Hilada.JPG",
       link: "https://hilada.co/",
     },
     
