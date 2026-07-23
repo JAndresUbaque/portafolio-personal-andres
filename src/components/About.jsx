@@ -28,6 +28,16 @@ function About() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
+        <motion.p
+          className="text-xl font-semibold text-center mb-6"
+          style={{ color: "var(--accent)" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          >
+          Convierto necesidades de negocio en interfaces que funcionan —  <br />
+          con la ventaja de haber estado del otro lado de la mesa.
+        </motion.p>
+
 
           {/* Descripción */}
           <motion.p
@@ -67,14 +77,14 @@ function About() {
               <div className="border-l-4 border-[var(--accent)] pl-4">
                 <p className="text-lg text-gray-200">
                   <span className="font-semibold text-white">HILADA (Mar 2024 – Ago 2024)</span>  
-                  — Gestión de redes sociales, actualización de tienda virtual y creación de campañas 
+                  — Gestión de redes sociales, migración de pagina web, actualización de tienda virtual y creación de campañas 
                   en Instagram y Facebook, logrando aumentar la visibilidad de productos.
                 </p>
               </div>
 
               <div className="border-l-4 border-[var(--accent)] pl-4">
                 <p className="text-lg text-gray-200">
-                  <span className="font-semibold text-white text-justify    ">JEM S.A.S (Ene 2022 – Jun 2024)</span>  
+                  <span className="font-semibold text-white text-justify">JEM S.A.S (Ene 2022 – Jun 2024)</span>  
                   — Coordinación de proyectos arquitectónicos, elaboración de planos y gestión 
                   de trámites. Obtuve aprobaciones de licencias sin observaciones.
                 </p>

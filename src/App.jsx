@@ -12,7 +12,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <main className="w-full mx-auto max-w-7xl px-4"> 
+      <main className="w-full mx-auto max-w-7xl px-4" > 
       <Header />
       <Hero />
       <About />

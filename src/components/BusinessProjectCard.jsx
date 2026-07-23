@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import "./flipCard.css"; // Importante: estilos del efecto flip
 
-function BusinessProjectCard({ title, img, description, link }) {
+function BusinessProjectCard({ year, title, img, description, link }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -30,7 +30,10 @@ function BusinessProjectCard({ title, img, description, link }) {
           <div className="absolute bottom-0 w-full bg-black/85 py-2 text-center">
             <h3 className="text-sm font-semibold" style={{ color: "var(--accent)" }}>
               {title}
-            </h3>
+             </h3>
+             <p className="text-xs text-gray-300">
+               {year}
+             </p>
           </div>
         </div>
 

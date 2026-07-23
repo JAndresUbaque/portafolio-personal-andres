@@ -21,21 +21,39 @@ function StatCard({ icon: Icon, label, value, helper }) {
   );
 }
 
+/**
+ * SkillRow — barra de nivel por segmentos (en vez de porcentaje).
+ * level: 1 = Básico | 2 = Intermedio | 3 = Práctico | 4 = Sólido
+ */
 function SkillRow({ label, level }) {
+  const levels = ["Básico", "Intermedio", "Práctico", "Sólido"];
+  const levelLabel = levels[level - 1];
+
   return (
-    <div className="mb-3">
-      <div className="flex justify-between mb-1">
+    <div className="mb-4">
+      <div className="flex justify-between mb-1.5">
         <span className="text-sm font-medium text-gray-100">{label}</span>
-        <span className="text-sm text-green-400">{level}%</span>
+        <span className="text-sm text-green-400">{levelLabel}</span>
       </div>
-      <div className="h-2 w-full rounded-full bg-gray-300/60 overflow-hidden">
-        <motion.div
-          className="h-full rounded-full bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400"
-          initial={{ width: 0 }}
-          whileInView={{ width: `${level}%` }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.9, ease: 'easeOut' }}
-        />
+      <div className="flex gap-1.5">
+        {[1, 2, 3, 4].map((segment) => (
+          <motion.div
+            key={segment}
+            className="h-2 flex-1 rounded-full overflow-hidden bg-gray-300/20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.4, delay: segment * 0.1 }}
+          >
+            <div
+              className={`h-full rounded-full transition-all duration-500 ${
+                segment <= level
+                  ? "bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400"
+                  : "bg-transparent"
+              }`}
+            />
+          </motion.div>
+        ))}
       </div>
     </div>
   );
@@ -63,8 +81,7 @@ export default function Skill() {
           cada entrega busca balance entre experiencia de usuario, claridad visual y eficiencia técnica.
         </p>
 
-
-        {/* --- Bloque de habilidades --- */}
+        {/* --- Bloque de tecnologías --- */}
         <ul className="flex justify-center grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 text-gray-200">
           <li className="flex items-center"><FaHtml5 className="text-3xl mr-2 text-orange-500" /> HTML</li>
           <li className="flex items-center"><FaCss3Alt className="text-3xl mr-2 text-blue-500" /> CSS</li>
@@ -73,27 +90,27 @@ export default function Skill() {
           <li className="flex items-center"><FaGithub className="text-3xl mr-2 text-white" /> GitHub</li>
         </ul>
 
-
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
           {stats.map((s, i) => (
             <StatCard key={i} icon={s.icon} value={s.value} label={s.label} helper={s.helper} />
           ))}
         </div>
 
+        {/* --- Bloque de habilidades por nivel --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="glass p-6 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent-2)' }}>Frontend Core</h3>
-            <SkillRow label="React" level={25} />
-            <SkillRow label="JavaScript" level={60} />
-            <SkillRow label="HTML" level={70} />
-            <SkillRow label="CSS" level={65} />
-           </div>
+            <h3 className="text-xl font-semibold mb-4 text-center"  style={{ color: 'var(--accent-2)' }}>Frontend Core</h3>
+            <SkillRow label="React" level={1} />
+            <SkillRow label="JavaScript" level={2} />
+            <SkillRow label="HTML" level={3} />
+            <SkillRow label="CSS" level={3} />
+          </div>
           <div className="glass p-6 rounded-xl">
-            <h3 className="text-xl font-semibold mb-4" style={{ color: 'var(--accent-2)' }}>Herramientas</h3>
-            <SkillRow label="Git/GitHub" level={70} />
-            <SkillRow label="Vite" level={30} />
-            <SkillRow label="Accesibilidad (a11y)" level={75} />
-            <SkillRow label="Performance" level={62} />
+            <h3 className="text-xl font-semibold mb-4 text-center" style={{ color: 'var(--accent-2)' }}>Herramientas</h3>
+            <SkillRow label="Git/GitHub" level={3} />
+            <SkillRow label="Vite" level={1} />
+            <SkillRow label="Netfily" level={3} />
+            <SkillRow label="Wordpress" level={2} />
           </div>
         </div>
       </div>

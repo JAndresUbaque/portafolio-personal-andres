@@ -21,11 +21,11 @@ function TimelineItem({ title, subtitle, period, description, index }) {
       />
 
       <div className="flex flex-col space-x-10">
-      <h3 className="text-2xl font-semibold" style={{ color: "var(--accent)" }}>
+      <h3 className="text-2xl font-semibold text-center" style={{ color: "var(--accent)" }}>
         {title}
       </h3>
 
-      <p className="text-blue-200 font-medium mt-1 text-md">
+      <p className="text-blue-200 font-medium mt-1 text-md text-center">
         {subtitle} • {period}
       </p>
 

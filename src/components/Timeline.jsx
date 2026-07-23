@@ -7,16 +7,16 @@ function Timeline() {
     {
       title: "Transición a Front-End",
       subtitle: "React + JavaScript + CSS + HTML",
-      period: "2024–2026",
+      period: "2025–2026",
       description:
-        "He desarrollado proyectos funcionales usando React y Vite, creando interfaces rápidas, accesibles y optimizadas. Me enfoco en componentes reutilizables, buenas prácticas y diseño orientado al usuario para entregar soluciones claras y profesionales."
+        "He desarrollado proyectos funcionales usando JavaScript, React y Vite, creando interfaces rápidas, accesibles y optimizadas. Me enfoco en componentes reutilizables, buenas prácticas y diseño orientado al usuario para entregar soluciones claras y profesionales."
     },
      {
       title: "Marketing y Web Management",
       subtitle: "HILADA",
-      period: "2024,2026",
+      period: "2024-2026",
       description:
-        "Gestiono parte del marketing digital y desarrollo web para fortalecer la presencia inline de la marca."
+        "Apoyo en la migración y gestión del sitio web, administración de contenido y fortalecimiento de la presencia digital de la marca mediante estrategias de marketing."
     },
        {
       title: "Coordinación de Proyectos",
