@@ -33,7 +33,7 @@ function PracticeProjectCard({ year, title, img, description, demoLink, codeLink
           ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
         `}
       >
-        <p className="text-gray-100 text-md leading-snug mb-3">{description}</p>
+        <p className="text-gray-100 text-sm leading-snug mb-4 ">{description}</p>
         <div className="flex gap-2">
           <a
             href={demoLink}

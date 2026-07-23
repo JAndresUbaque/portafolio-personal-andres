@@ -1,0 +1,1567 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  images/
+    calculadora-preview.PNG
+    Hilada.JPG
+    NovaStream.JPG
+    play.png
+    todo.png
+  _redirects
+  cv-andres-ubaque.pdf
+  googled3a679fed522e490.html
+  vite.svg
+src/
+  assets/
+    codehero.png
+    herobg.jpg
+    logo.png
+    react.svg
+  components/
+    About.jsx
+    BusinessProjectCard.jsx
+    CertCard.jsx
+    Certifications.jsx
+    Contact.jsx
+    flipCard.css
+    Header.jsx
+    Hero.jsx
+    PracticeProjectCard.jsx
+    Projects.jsx
+    Services.jsx
+    Skill.jsx
+    Timeline.jsx
+    TimelineItem.jsx
+  App.css
+  App.jsx
+  index.css
+  main.jsx
+.gitignore
+eslint.config.js
+index.html
+package.json
+README.md
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/_redirects">
+/*  /index.html  200
+</file>
+
+<file path="public/googled3a679fed522e490.html">
+google-site-verification: googled3a679fed522e490.html
+</file>
+
+<file path="public/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/components/flipCard.css">
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* FRONT */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* BACK (cuando gira) */
+.flip-card-back {
+  background: rgba(0, 0, 0, 0.75);
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</file>
+
+<file path="src/main.jsx">
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+
+     <App />
+   
+  </React.StrictMode>,
+);
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path="eslint.config.js">
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{js,jsx}'],
+    extends: [
+      js.configs.recommended,
+      reactHooks.configs['recommended-latest'],
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 'latest',
+        ecmaFeatures: { jsx: true },
+        sourceType: 'module',
+      },
+    },
+   rules: {
+  'no-unused-vars': [
+    'error',
+    { varsIgnorePattern: '^[A-Z_]|motion' },
+  ],
+  'no-restricted-imports': [
+    'error',
+    {
+      patterns: ['!framer-motion'],
+    },
+  ],
+},
+
+  },
+])
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+</file>
+
+<file path="src/App.css">
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+</file>
+
+<file path="src/components/PracticeProjectCard.jsx">
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+function PracticeProjectCard({ year, title, img, description, demoLink, codeLink }) {
+  const [isActive, setIsActive] = useState(false);
+
+  return (
+    <motion.div
+      onClick={() => setIsActive((prev) => !prev)}
+      initial={{ opacity: 0, scale: 0.9, y: 20 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="
+        glass rounded-xl overflow-hidden 
+        border border-white/10 shadow-lg
+        hover:shadow-2xl hover:border-[var(--accent)]/40
+        transition-all duration-300
+        group relative cursor-pointer
+        aspect-square w-full max-w-[320px] mx-auto
+      "
+    >
+      <img
+        src={img}
+        alt={title}
+        className="h-full w-full object-fill group-hover:scale-105 transition-all duration-500"
+      />
+
+      <div
+        className={`
+          absolute inset-0 bg-black/65 transition-all duration-300
+          flex flex-col items-center justify-center text-center px-4
+          ${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"}
+        `}
+      >
+        <p className="text-gray-100 text-sm leading-snug mb-4 ">{description}</p>
+        <div className="flex gap-2">
+          <a
+            href={demoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="px-4 py-2.5 rounded-lg text-white text-sm font-medium bg-[var(--accent-2)] hover:bg-[var(--accent-2)]/80 transition"
+          >
+            Demo
+          </a>
+          <a
+            href={codeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="px-4 py-2.5 rounded-lg text-sm font-medium border transition"
+            style={{ borderColor: "var(--accent-2)", color: "var(--accent-2)" }}
+          >
+            Código
+          </a>
+        </div>
+      </div>
+
+      <div className="absolute bottom-0 w-full bg-black/85 py-1 text-center">
+        <h3 className="text-sm font-semibold" style={{ color: "var(--accent)" }}>
+          {title}
+        </h3>
+        <p className="text-xs text-gray-300">
+             {year}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
+export default PracticeProjectCard;
+</file>
+
+<file path="src/components/TimelineItem.jsx">
+import { motion } from "framer-motion";
+
+function TimelineItem({ title, subtitle, period, description, index }) {
+  return (
+    <motion.div
+      className="relative pl-20"
+      initial={{ opacity: 0, x: -25 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}
+    >
+      {/* Punto perfectamente centrado en la línea */}
+      <div
+        className="absolute left-8 top-2 w-4 h-4 rounded-full border-2"
+        style={{
+          backgroundColor: "var(--accent-2)",
+          borderColor: "var(--accent)",
+          boxShadow: "0 0 8px var(--accent)",
+          transform: "translateX(-50%)",
+        }}
+      />
+
+      <div className="flex flex-col space-x-10">
+      <h3 className="text-2xl font-semibold text-center" style={{ color: "var(--accent)" }}>
+        {title}
+      </h3>
+
+      <p className="text-blue-200 font-medium mt-1 text-md text-center">
+        {subtitle} • {period}
+      </p>
+
+      <p className=" text-justify md:text-center text-gray-200 mt-2 text-[15px] mr-6 ">
+        {description}
+      </p>
+      </div>
+    </motion.div>
+  );
+}
+
+export default TimelineItem;
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite';
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  base: '/',
+});
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio &lt; Andrés Ubaque / Dev &gt;</title>
+    <meta name="google-site-verification" content="dmPQHJJmJXqHp-B29Npu3aJfSGkYXZzsYSGHV_Rs3C4" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+<file path="src/components/BusinessProjectCard.jsx">
+import { motion } from "framer-motion";
+import "./flipCard.css"; // Importante: estilos del efecto flip
+
+function BusinessProjectCard({ year, title, img, description, link }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9, y: 20 }}
+      whileInView={{ opacity: 1, scale: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="
+        relative mx-auto rounded-xl overflow-hidden
+        border border-white/10 shadow-lg glass
+        hover:shadow-2xl hover:border-[var(--accent)]/40
+        transition-all duration-300
+        flip-card 
+      "
+      style={{ width: "320px", height: "320px" }}
+    >
+      <div className="flip-card-inner">
+
+        {/* Frente */}
+        <div className="flip-card-front">
+          <img
+            src={img}
+            alt={title}
+            className="w-full h-full object-fill"
+          />
+
+          <div className="absolute bottom-0 w-full bg-black/85 py-2 text-center">
+            <h3 className="text-sm font-semibold" style={{ color: "var(--accent)" }}>
+              {title}
+             </h3>
+             <p className="text-xs text-gray-300">
+               {year}
+             </p>
+          </div>
+        </div>
+
+        {/* Parte trasera */}
+        <div className="flip-card-back">
+          <div className="flex flex-col items-center justify-center h-full px-5 text-center">
+
+            <h3 className="text-lg font-semibold mb-2" style={{ color: "var(--accent)" }}>
+              {title}
+            </h3>
+
+            <p className="text-gray-200 text-sm leading-snug mb-4">
+              {description}
+            </p>
+
+            <a
+              href={link}
+              target="_blank"
+              className="
+                px-4 py-2 rounded-lg text-white text-sm font-medium
+                bg-[var(--accent-2)] hover:bg-[var(--accent-2)]/80 
+                transition
+              "
+            >
+              Ver Proyecto
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </motion.div>
+  );
+}
+
+export default BusinessProjectCard;
+</file>
+
+<file path="src/components/Skill.jsx">
+import { motion } from "framer-motion";
+import { FaGaugeHigh, FaRocket, FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub } from "react-icons/fa6";
+
+function StatCard({ icon: Icon, label, value, helper }) {
+  return (
+    <motion.div
+      className="glass p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
+      whileHover={{ scale: 1.02 }}
+    >
+      <div className="flex items-center gap-12"> 
+        <div className="p-4 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'rgba(255, 204, 0, 0.09)', color: 'var(--accent)' }}>
+          <Icon className="w-7 h-7" />
+        </div>
+        <div className="flex flex-col items-center">
+          <div className="text-2xl font-bold" style={{ color: 'var(--accent)' }}>{value}</div>
+          <div className="text-white text-center">{label}</div>
+          {helper && <div className="text-green-400 text-sm mt-1 text-center">{helper}</div>}
+        </div>
+      </div>
+    </motion.div>
+  );
+}
+
+/**
+ * SkillRow — barra de nivel por segmentos (en vez de porcentaje).
+ * level: 1 = Básico | 2 = Intermedio | 3 = Práctico | 4 = Sólido
+ */
+function SkillRow({ label, level }) {
+  const levels = ["Básico", "Intermedio", "Práctico", "Sólido"];
+  const levelLabel = levels[level - 1];
+
+  return (
+    <div className="mb-4">
+      <div className="flex justify-between mb-1.5">
+        <span className="text-sm font-medium text-gray-100">{label}</span>
+        <span className="text-sm text-green-400">{levelLabel}</span>
+      </div>
+      <div className="flex gap-1.5">
+        {[1, 2, 3, 4].map((segment) => (
+          <motion.div
+            key={segment}
+            className="h-2 flex-1 rounded-full overflow-hidden bg-gray-300/20"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.4, delay: segment * 0.1 }}
+          >
+            <div
+              className={`h-full rounded-full transition-all duration-500 ${
+                segment <= level
+                  ? "bg-gradient-to-r from-blue-400 via-cyan-400 to-purple-400"
+                  : "bg-transparent"
+              }`}
+            />
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default function Skill() {
+  const stats = [
+    { icon: FaGaugeHigh, label: 'Páginas Lighthouse > 90', value: '95+', helper: 'React • HTML • CSS • Accesibilidad' },
+    { icon: FaRocket, label: 'Proyectos Front-End', value: '8', helper: 'React, JS, Vite' },
+  ];
+
+  return (
+    <motion.section
+      id="skills-stats"
+      className="py-20 text-slate-900"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        {/* --- Bloque de métricas --- */}
+        <h2 className="text-4xl font-bold mb-6 text-center neon-text">Impacto y Habilidades</h2>
+        <p className="text-justify md:text-center text-gray-100 max-w-3xl mx-auto mb-10">
+          Combinando React, JavaScript, HTML y CSS con visión analítica y enfoque en rendimiento, 
+          cada entrega busca balance entre experiencia de usuario, claridad visual y eficiencia técnica.
+        </p>
+
+        {/* --- Bloque de tecnologías --- */}
+        <ul className="flex justify-center grid grid-cols-2 md:grid-cols-3 gap-4 mb-10 text-gray-200">
+          <li className="flex items-center"><FaHtml5 className="text-3xl mr-2 text-orange-500" /> HTML</li>
+          <li className="flex items-center"><FaCss3Alt className="text-3xl mr-2 text-blue-500" /> CSS</li>
+          <li className="flex items-center"><FaJs className="text-3xl mr-2 text-yellow-500" /> JavaScript</li>
+          <li className="flex items-center"><FaReact className="text-3xl mr-2 text-blue-500" /> React</li>
+          <li className="flex items-center"><FaGithub className="text-3xl mr-2 text-white" /> GitHub</li>
+        </ul>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+          {stats.map((s, i) => (
+            <StatCard key={i} icon={s.icon} value={s.value} label={s.label} helper={s.helper} />
+          ))}
+        </div>
+
+        {/* --- Bloque de habilidades por nivel --- */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="glass p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-4 text-center"  style={{ color: 'var(--accent-2)' }}>Frontend Core</h3>
+            <SkillRow label="React" level={1} />
+            <SkillRow label="JavaScript" level={2} />
+            <SkillRow label="HTML" level={3} />
+            <SkillRow label="CSS" level={3} />
+          </div>
+          <div className="glass p-6 rounded-xl">
+            <h3 className="text-xl font-semibold mb-4 text-center" style={{ color: 'var(--accent-2)' }}>Herramientas</h3>
+            <SkillRow label="Git/GitHub" level={3} />
+            <SkillRow label="Vite" level={1} />
+            <SkillRow label="Netfily" level={3} />
+            <SkillRow label="Wordpress" level={2} />
+          </div>
+        </div>
+      </div>
+    </motion.section>
+  );
+}
+</file>
+
+<file path="src/components/CertCard.jsx">
+import { motion } from "framer-motion";
+import { FaMedal } from "react-icons/fa6";
+
+function CertCard({ title, institution, year }) {
+  return (
+    
+    <motion.div
+  className="glass p-7 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 flex items-start gap-4 border border-transparent hover:border-[var(--accent-2)]"
+  style={{
+    background: 'linear-gradient(145deg, rgba(30, 34, 42, 0.8) 0%, rgba(142, 157, 185, 0.5) 100%)',
+  }}
+  whileHover={{ 
+    scale: 1.03,
+    background: 'linear-gradient(145deg, rgba(30, 34, 42, 0.9) 0%, rgba(36, 50, 75, 0.6) 100%)' 
+  }}
+>
+      {/* Badge Lateral */}
+      <div
+        className="w-12 h-12 rounded-xl flex items-center justify-center shadow-md"
+        style={{
+          backgroundColor: "rgba(255,204,0,0.15)",
+          color: "var(--accent)"
+        }}
+      >
+        <FaMedal className="text-2xl" />
+      </div>
+
+      {/* Contenido */}
+      <div className="flex-1">
+        <h3
+          className="text-lg font-bold mb-1"
+          style={{ color: "var(--accent-2)" }}
+        >
+          {title}
+        </h3>
+
+        <p className="text-blue-200 text-sm leading-tight">
+          {institution}
+        </p>
+
+        <p className="text-green-400 text-sm font-semibold mt-1">
+          {year}
+        </p>
+      </div>
+    </motion.div>
+  );
+}
+
+export default CertCard;
+</file>
+
+<file path="src/components/Services.jsx">
+import { motion } from "framer-motion";
+import { Monitor, Smartphone, ShoppingBag, Brush } from "lucide-react";
+
+const services = [
+  {
+    title: "Sitios Web Modernos",
+    desc: "Desarrollos rápidos, seguros y con un diseño visual que transmite profesionalismo. Ideales para negocios que buscan tener presencia digital sólida.",
+    icon: Monitor,
+  },
+  {
+    title: "Landing Pages que Convierten",
+    desc: "Páginas diseñadas para captar clientes. Mensajes claros, estructura optimizada y enfoque en resultados.",
+    icon: Smartphone,
+  },
+  {
+    title: "Diseño Visual Profesional",
+    desc: "Mejoro la presentación de tu marca con interfaces limpias, estética cuidada y una experiencia fácil de navegar.",
+    icon: Brush,
+  },
+  {
+    title: "Tiendas Virtuales (Próximamente)",
+    desc: "E-commerce con catálogo, pagos y carrito de compras. Una solución completa para vender online.",
+    icon: ShoppingBag,
+  },
+];
+
+export default function Services() {
+  return (
+    <section id="services" className="py-20 px-6 md:px-10">
+      
+      {/* Título */}
+      <motion.h2
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="text-3xl md:text-4xl font-bold text-center neon-text"
+      >
+        Servicios
+      </motion.h2>
+
+      {/* Subtítulo */}
+      <motion.p
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="text-center text-gray-300 max-w-2xl mx-auto mt-3"
+      >
+        Soluciones claras y profesionales para que tu negocio tenga presencia real en internet.
+      </motion.p>
+
+      {/* GRID */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mt-12">
+
+        {services.map(({ title, desc, icon: Icon }, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.6, delay: index * 0.15 }}
+            viewport={{ once: true }}
+            className="relative group p-6 rounded-2xl border border-white/10 bg-white/5
+                       backdrop-blur-md hover:bg-white/10 transition-all duration-300"
+          >
+            {/* Glow neon suave */}
+            <div className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition duration-500
+                            bg-[var(--accent)]/10 blur-2xl -z-10"></div>
+
+            {/* Icono */}
+            <div className="flex items-center justify-center mb-4">
+              <Icon
+                size={42}
+                className="text-[var(--accent)] drop-shadow-[0_0_6px_var(--accent)]"
+              />
+            </div>
+
+            {/* Título */}
+            <h3 className="text-xl font-semibold text-[var(--accent-2)] text-center">
+              {title}
+            </h3>
+
+            {/* Descripción */}
+            <p className="text-gray-300 text-center mt-3 leading-relaxed">
+              {desc}
+            </p>
+          </motion.div>
+        ))}
+
+      </div>
+    </section>
+  );
+}
+</file>
+
+<file path="src/components/Timeline.jsx">
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
+import TimelineItem from "./TimelineItem";
+
+function Timeline() {
+  const items = [
+    {
+      title: "Transición a Front-End",
+      subtitle: "React + JavaScript + CSS + HTML",
+      period: "2025–2026",
+      description:
+        "He desarrollado proyectos funcionales usando JavaScript, React y Vite, creando interfaces rápidas, accesibles y optimizadas. Me enfoco en componentes reutilizables, buenas prácticas y diseño orientado al usuario para entregar soluciones claras y profesionales."
+    },
+     {
+      title: "Marketing y Web Management",
+      subtitle: "HILADA",
+      period: "2024-2026",
+      description:
+        "Apoyo en la migración y gestión del sitio web, administración de contenido y fortalecimiento de la presencia digital de la marca mediante estrategias de marketing."
+    },
+       {
+      title: "Coordinación de Proyectos",
+      subtitle: "JEM S.A.S",
+      period: "2022–2024",
+      description:
+        "Lideré la gestión de proyectos y comunicación con stakeholders, asegurando claridad en entregables, tiempos y procesos. Esta experiencia fortaleció mi capacidad para documentar, planificar y trabajar bajo objetivos, habilidades que hoy aplico directamente al desarrollo web."
+    },
+  ];
+
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start 150px", "end 80%"],
+  });
+
+  const lineHeight = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  return (
+    <section id="timeline" className="py-20 text-slate-100">
+      <div className="max-w-6xl mx-auto px-3">
+        <h2 className="text-4xl font-bold mb-14 text-center neon-text">
+          Trayectoria
+        </h2>
+
+        <div ref={containerRef} className="relative">
+
+          {/* Línea de fondo */}
+          <div className="absolute left-8 top-0 bottom-0 w-[3px] bg-slate-500/30 rounded-xl" />
+
+          {/* Línea animada */}
+          <motion.div
+            className="absolute left-8 top-0 w-[3px] bg-[var(--accent)] rounded-xl"
+            style={{ height: lineHeight }}
+          />
+
+          {/* Items */}
+          <div className="space-y-16 mt-1 ">
+            {items.map((item, index) => (
+              <TimelineItem key={index} index={index} {...item} />
+            ))}
+          </div>
+
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Timeline;
+</file>
+
+<file path="src/App.jsx">
+import Header from './components/Header';
+import Hero from './components/Hero';
+import About from './components/About';
+import Projects from './components/Projects';
+import Certifications from './components/Certifications';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Skill from './components/Skill';
+import Timeline from './components/Timeline';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <main className="w-full mx-auto max-w-7xl px-4" > 
+      <Header />
+      <Hero />
+      <About />
+      <Skill />
+      <Projects />
+      <Certifications/>
+      <Timeline/>
+      <Services/>
+      <Contact/>
+      {/* Agrega más secciones después */}
+    </main>
+    </div>
+  );
+}
+
+export default App;
+</file>
+
+<file path="src/components/Hero.jsx">
+import { motion } from "framer-motion";
+
+function Hero() {
+  return (
+    <motion.section
+      id="hero"
+      className="min-h-[80vh] pt-24 flex items-center justify-center px-6"
+      initial={{ opacity: 0, scale: 0.92 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="relative w-full max-w-xl mx-auto px-8 md:px-6 py-6 md:py-8 rounded-2xl shadow-lg backdrop-blur-md border border-white/10 bg-white/5 overflow-hidden">
+
+        {/* Glow solo dentro del contenedor */}
+        <div className="absolute inset-0 rounded-2xl bg-gradient-to-r 
+                        from-blue-500/20 via-cyan-500/20 to-purple-500/20 
+                        animate-gradient-move -z-10"></div>
+
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gray-200 drop-shadow-md">
+          Jorge Andrés Ubaque Garzón
+        </h1>
+
+        {/* Línea de luz animada */}
+        <motion.div
+          className="mx-auto mt-3 h-[3px] w-24 md:w-32 rounded-full bg-gradient-to-r 
+                     from-blue-400 via-cyan-400 to-purple-400"
+          initial={{ width: 0 }}
+          animate={{ width: "6rem" }}
+          transition={{ duration: 1, delay: 0.4 }}
+        ></motion.div>
+
+        <p className="mt-5 text-lg md:text-x1 text-blue-200/90 text-center">
+          Administrador de Empresas → Desarrollador Front-End
+        </p>
+      </div>
+    </motion.section>
+  );
+}
+
+export default Hero;
+</file>
+
+<file path="package.json">
+{
+  "name": "portafolio-personal-andres",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/vite": "^4.1.17",
+    "framer-motion": "^12.23.24",
+    "lucide-react": "^0.553.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^5.5.0",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "vite": "^7.1.7"
+  }
+}
+</file>
+
+<file path="src/components/Contact.jsx">
+import { motion } from 'framer-motion';
+import { FaEnvelope, FaLinkedin, FaGithub, FaWhatsapp, FaDownload } from 'react-icons/fa';
+
+function Contact() {
+  return (
+    <motion.section 
+      id="contact"
+      className="py-20 text-slate-800 flex items-center justify-between"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 neon-text">Contacto</h2>
+        <p className="text-gray-200 py-2 mb-8">
+          ¿Hablamos? Estoy abierto a oportunidades y colaboraciones.
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-3">
+          {[
+            { icon: FaEnvelope, label: 'Email', link: 'mailto:jorge.ubaque55@gmail.com', bg: 'var(--accent-2)' },
+            { icon: FaLinkedin, label: 'LinkedIn', link: 'https://www.linkedin.com/in/jorge-andres-ubaque-garzon-9a8256226/', border: true },
+            { icon: FaGithub, label: 'GitHub', link: 'https://github.com/JAndresUbaque', border: true },
+            { icon: FaWhatsapp, label: 'WhatsApp', link: 'https://wa.me/573045459058?text=Hola%20Andres', border: true },
+            { icon: FaDownload, label: 'CV', link:'/portafolio-personal-andres/cv-andres-ubaque.pdf', border: true, download: true },
+          ].map((c, idx) => {
+            const Icon = c.icon;
+            return (
+              <motion.a
+                key={idx}
+                href={c.link}
+                download={c.download ? true : undefined}
+                target={c.download ? '_self' : '_blank'}
+                rel={c.download ? undefined : 'noreferrer'}
+                className={`flex items-center justify-center sm:px-4 sm:py-2 px-4 py-3 rounded-md text-white border transition-all duration-300`}
+                style={{
+                  backgroundColor: c.border ? 'transparent' : c.bg,
+                  borderColor: c.border ? 'var(--accent-2)' : 'transparent',
+                  color: c.border ? 'var(--accent)' : '#fff',
+                }}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                animate={{ scale: [1, 1.05, 1] }}
+                transition={{ duration: 2, repeat: Infinity, repeatDelay: 1 }}
+                aria-label={c.label}
+              >
+                <Icon className="text-xl sm:text-base" />
+                <span className="hidden sm:inline ml-2">{c.label}</span>
+              </motion.a>
+            );
+          })}
+        </div>
+      </div>
+    </motion.section>
+  );
+}
+
+export default Contact;
+</file>
+
+<file path="src/components/Header.jsx">
+import { motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import logo from "../assets/logo.png";
+
+
+function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleMenu = () => setIsOpen(!isOpen);
+
+    return (
+        <motion.header
+            className="fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-black/20 border-b border-yellow-400/20 "
+            initial={{ y: -80, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+        >
+            <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+                {/* LOGO */}
+
+            <a href="#hero" className="flex items-center gap-2 hover:opacity-80 transition">
+            <img 
+                src={logo} 
+                alt="Logo Andrés Ubaque"
+                 className="w-50 h-12 object-contain p-0 m-0"
+            
+                    />
+                </a>
+                
+                {/* MENÚ DESKTOP */}
+                <ul className="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <li><a href="#about" className="hover:text-yellow-400 transition">Sobre mí</a></li>
+                    <li><a href="#projects" className="hover:text-yellow-400 transition">Proyectos</a></li>
+                    <li><a href="#certifications" className="hover:text-yellow-400 transition">Certificados</a></li>
+                    <li><a href="#services" className="hover:text-yellow-400 transition">Servicios</a></li>
+                    <li>
+                        <a 
+                            href="#contact"
+                            className="px-4 py-2 rounded-xl bg-yellow-400/20 border border-yellow-400/40
+                                       hover:bg-yellow-400/30 hover:border-yellow-400/60 transition"
+                        >
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+
+                {/* BOTÓN HAMBURGUESA */}
+                <button
+                    onClick={toggleMenu}
+                    className="md:hidden p-2 rounded-lg bg-yellow-500/80 text-white hover:bg-yellow-500 transition"
+                >
+                    {isOpen ? <X size={24} /> : <Menu size={24} />}
+                </button>
+            </nav>
+
+            {/* MENÚ MÓVIL */}
+            <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={isOpen ? { height: "auto", opacity: 1 } : { height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+                className="md:hidden overflow-hidden absolute top-full right-4 z-40"
+            >
+                <ul className="flex flex-col bg-gray-800/90 backdrop-blur-lg rounded-3xl p-4 shadow-lg border border-yellow-300/40 w-56">
+                    {[
+                        { text: "Inicio", href: "#hero" },
+                        { text: "Sobre mí", href: "#about" },
+                        { text: "Proyectos", href: "#projects" },
+                        { text: "Servicios", href: "#services" },
+                        { text: "Contacto", href: "#contact" }
+                    ].map((item) => (
+                        <li key={item.text} className="w-full">
+                            <a
+                                href={item.href}
+                                onClick={toggleMenu}
+                                className="block p-2 rounded-xl text-gray-300 text-lg font-medium
+                                           hover:bg-yellow-100 hover:text-yellow-700 transition"
+                            >
+                                {item.text}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </motion.div>
+        </motion.header>
+    );
+}
+
+export default Header;
+</file>
+
+<file path="src/components/About.jsx">
+import { motion } from "framer-motion";
+
+function About() {
+  return (
+    <motion.section
+      id="about"
+      className="py-20 text-slate-100"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.9 }}
+      viewport={{ once: true }}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+
+        {/* Título */}
+        <motion.h2
+          className="text-4xl font-extrabold text-center neon-text mb-12 tracking-tigh"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+        >
+          Sobre mí
+        </motion.h2>
+
+        {/* Contenedor */}
+        <motion.div
+          className="glass rounded-2xl p-8 md:p-10 space-y-8"
+          initial={{ scale: 0.97, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6 }}
+        >
+        <motion.p
+          className="text-xl font-semibold text-center mb-6"
+          style={{ color: "var(--accent)" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          >
+          Convierto necesidades de negocio en interfaces que funcionan —  <br />
+          con la ventaja de haber estado del otro lado de la mesa.
+        </motion.p>
+
+
+          {/* Descripción */}
+          <motion.p
+            className="text-lg leading-relaxed text-gray-300 text-justify"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            Soy <span className="font-semibold text-white">Jorge Andrés Ubaque Garzón</span>, 
+            administrador de empresas y desarrollador Front-End en formación. Me especializo 
+            en crear sitios web modernos, rápidos y bien organizados utilizando 
+            <span className="text-white"> HTML, CSS, JavaScript, React y Git</span>.
+            Mi enfoque combina diseño, funcionalidad y claridad. Gracias a mi experiencia en gestión de proyectos, entiendo cómo piensa un negocio 
+            y qué debe comunicar para atraer clientes y transmitir profesionalismo.
+
+          <br /><br />
+            Hoy construyo páginas corporativas, portafolios y landing pages optimizadas, 
+           con una visión orientada a resultados y una ejecución limpia y organizada.
+              </motion.p>
+
+          {/* Experiencia profesional */}
+          <motion.div
+            className="space-y-5 "
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.35 }}
+          >
+            <h3
+              className="text-2xl font-semibold"
+              style={{ color: "var(--accent)" }}
+            >
+              Experiencia Laboral Destacada
+            </h3>
+
+            <div className="space-y-4 text-justify">
+
+              <div className="border-l-4 border-[var(--accent)] pl-4">
+                <p className="text-lg text-gray-200">
+                  <span className="font-semibold text-white">HILADA (Mar 2024 – Ago 2024)</span>  
+                  — Gestión de redes sociales, migración de pagina web, actualización de tienda virtual y creación de campañas 
+                  en Instagram y Facebook, logrando aumentar la visibilidad de productos.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-[var(--accent)] pl-4">
+                <p className="text-lg text-gray-200">
+                  <span className="font-semibold text-white text-justify">JEM S.A.S (Ene 2022 – Jun 2024)</span>  
+                  — Coordinación de proyectos arquitectónicos, elaboración de planos y gestión 
+                  de trámites. Obtuve aprobaciones de licencias sin observaciones.
+                </p>
+              </div>
+
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
+    </motion.section>
+  );
+}
+
+export default About;
+</file>
+
+<file path="src/components/Certifications.jsx">
+import { motion } from "framer-motion";
+import CertCard from "./CertCard";
+
+function Certifications() {
+  const certs = [
+      { 
+      title: "Diseño Web Adaptable", 
+      institution: "freeCodeCamp", 
+      year: "2026" 
+    },
+      { 
+      title: "JavaScript", 
+      institution: "freeCodeCamp", 
+      year: "2026" 
+    },
+    { 
+      title: "Curso de React.js", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Curso de Bases de Datos con SQL", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Cusro de Diseño para Programadores", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Curso de Asincronismo con JavaScript", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Frontend Developer", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+    { 
+      title: "Git y GitHub Profesional", 
+      institution: "Platzi", 
+      year: "2025" 
+    },
+  
+    
+ 
+  ];
+
+  return (
+    <motion.section
+      id="certifications"
+      className="py-20 text-slate-900 max-w-6xl mx-auto px-4"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Título */}
+        <h2 className="text-4xl font-bold mb-6 text-center neon-text">
+          Certificaciones y Cursos
+        </h2>
+
+        {/* Subtítulo descriptivo */}
+        <p className="text-justify md:text-center text-gray-100 max-w-2xl mx-auto mb-12">
+          Formación continua que refuerza mis habilidades técnicas y mi perfil profesional,
+          con enfoque en desarrollo web, buenas prácticas y gestión de proyectos.
+        </p>
+
+        {/* Grid de tarjetas */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {certs.map((cert, index) => (
+            <CertCard
+              key={index}
+              title={cert.title}
+              institution={cert.institution}
+              year={cert.year}
+            />
+          ))}
+        </div>
+      </div>
+    </motion.section>
+  );
+}
+
+export default Certifications;
+</file>
+
+<file path="src/index.css">
+@import "tailwindcss";
+
+
+
+:root {
+  /* Acentos - Por qué: Estos colores dan calidez futurista y se usan en títulos, botones y hovers para consistencia. */
+  --accent: #FFB347;      /* Ámbar moderno (principal) - Qué hace: Se aplica en clases como .neon-text. */
+  --accent-2: #FF8C32;    /* Naranja más fuerte para hover - Qué hace: Cambia color en interacciones, repitiendo el concepto de hover para dinamismo. */
+  --accent-green: #4CAF50;
+  --accent-3: #badde0; 
+
+  /* Fondos - Por qué: Crea un gradiente suave para el fondo general, mejorando elegancia sin distraer del contenido. */
+  --bg-start: #1A1E26;    /* Gris oscuro más profundo para elegancia - Qué hace: Inicio del gradiente en body. */
+  --bg-end: #282D36;      /* Gris azulado sutil - Qué hace: Fin del gradiente, repitiendo para profundidad visual. */
+  
+  /* Superficies - Por qué: Para paneles y tarjetas, asegura contraste legible. */
+  --surface-color: #303540; /* Paneles / tarjetas - Qué hace: Fondo base para .glass. */
+  --surface-hover: #404550; /* Hover con leve elevación - Qué hace: Cambia en hover, repitiendo transición. */
+
+  /* Tipografía - Por qué: Mejora legibilidad con colores de alto contraste. */
+  --text-primary: #FFFFFF;  /* Blanco puro para textos principales - Qué hace: Aplica a body color, evitando grises claros en oscuros. */
+  --text-secondary: #a2acbc; /* Gris claro más visible - Qué hace: Para subtítulos, repitiendo para evitar fatiga visual. */
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fondo general fijo y continuo */
+body {
+  background: linear-gradient(125deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  background-attachment: fixed; /* 👈 hace que el fondo se quede quieto al hacer scroll */
+  background-repeat: no-repeat; /* 👈 evita reinicio del gradiente */
+
+  background-position: center;
+  
+  color: var(--text-primary);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden; /* previene scroll lateral si hay sombras o efectos */
+}
+
+/* --- Hero Section con fondo e imagen --- Por qué: Oscurece la imagen para que texto resalte, mejorando legibilidad. */
+#hero {
+  background-image:
+    linear-gradient(to top, rgba(26,30,38,0.85), rgba(40,45,54,0.45), rgba(26,30,38,0.85)), /* Qué hace: Capa opaca sobre imagen; repitiendo rgba para gradiente. */
+    url('/src/assets/codehero.png');
+  background-size: cover; /* Qué hace: Cubre todo el área. */
+  background-position: center; /* Qué hace: Centra la imagen. */
+  background-repeat: no-repeat; /* Qué hace: Evita repetición. */
+
+   border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+  /* Opcional: para que no se salgan los bordes si hay contenido dentro */
+  overflow: hidden;
+
+}
+
+
+
+/* --- Textos y acentos --- Por qué: Clases reutilizables para colores consistentes. */
+.accent-text {
+  color: var(--accent); /* Qué hace: Aplica ámbar; repitiendo var(--accent) para títulos. */
+}
+
+.accent-bg {
+  background-color: var(--accent); /* Qué hace: Fondo ámbar. */
+  color: #fff; /* Blanco para contraste. */
+}
+
+/* --- Titulares brillantes --- Por qué: Efecto glow futurista sutil para títulos. */
+.neon-text {
+  color: var(--accent); /* Qué hace: Color base ámbar; repitiendo variable. */
+  text-shadow: 0 0 6px rgba(255,179,71,0.4), 0 0 16px rgba(255,140,50,0.2); /* Qué hace: Sombra glow; repitiendo rgba para capas. */
+}
+
+/* --- Superficies translúcidas (tarjetas, paneles) --- Por qué: Glassmorphism para look moderno y elegante. */
+.glass {
+  background: rgba(48,53,64,0.75); /* Qué hace: Fondo translúcido; ajustado para más opacidad y legibilidad. */
+  backdrop-filter: blur(8px); /* Qué hace: Difumina fondo detrás; reducido para sutileza. */
+  border: 1px solid rgba(255,255,255,0.1); /* Qué hace: Borde sutil. */
+  box-shadow:
+    0 4px 12px rgba(0,0,0,0.3), /* Sombra suave externa. */
+    inset 0 0 6px rgba(255,255,255,0.05); /* Glow interno. */
+  border-radius: 16px; /* Qué hace: Bordes más redondeados para elegancia. */
+  transition: all 0.4s ease; /* Qué hace: Anima cambios; repitiendo transition para fluidez en hover. */
+}
+
+.glass:hover {
+  transform: translateY(-4px); /* Qué hace: Eleva ligeramente en hover. */
+  box-shadow:
+    0 8px 16px rgba(0,0,0,0.4), /* Sombra más profunda. */
+    0 0 24px rgba(255,179,71,0.15); /* Glow con ámbar; repitiendo rgba. */
+}
+
+/* --- Barras de habilidad --- Por qué: Estilos para barras en Habilidades, con verde para personalización. */
+
+.skill-bar-track {
+  background-color: var(--surface-hover); /* Qué hace: Fondo gris para la barra vacía; repitiendo variable. */
+  border-radius: 6px; /* Bordes redondeados. */
+  overflow: hidden; /* Evita desbordes. */
+  height: 10px; /* Aumentado para visibilidad. */
+}
+
+.skill-bar-progress {
+  background: linear-gradient(90deg, var(--accent), var(--accent-green)); /* Qué hace: Gradiente ámbar a verde; repitiendo variables para progreso. */
+  height: 100%; /* Llena la altura. */
+  transition: width 1.5s ease; /* Anima el ancho; repitiendo transition para efecto suave. */
+  border-radius: 6px; /* Bordes consistentes. */
+}
+
+.perspective { perspective: 1000px; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+</file>
+
+<file path="src/components/Projects.jsx">
+import { motion } from "framer-motion";
+import BusinessProjectCard from "./BusinessProjectCard";
+import PracticeProjectCard from "./PracticeProjectCard";
+
+
+function Projects() {
+   const businessProjects = [
+    {
+      title: "Hilada",
+      year: "Junio 2026", 
+      description:
+        "Mantenimiento y mejora continua de la tienda e-commerce en Shopify. Implementación de nuevas funcionalidades, optimización del diseño responsive, personalización de componentes y mejoras en la experiencia de usuario mediante HTML, CSS, JavaScript y Liquid",
+      img: "/images/Hilada.JPG",
+      link: "https://hilada.co/",
+    },
+    
+  ];
+
+  const practiceProjects = [
+    {
+      title: "NovaStream 🎬",
+      year: "Junio 2026",  
+      description:  
+        "Plataforma de streaming ficticia construida como practica únicamente con HTML, CSS y JavaScript Vanilla.",
+      img: "/images/NovaStream.JPG",
+      demoLink: "https://novastream-practice.netlify.app//",
+      codeLink: "https://github.com/JAndresUbaque/nova-stream.git",
+    },
+    {
+      title: "To-Do React 📝​ ",
+      year: "Junio 2026", 
+      description:
+        "Aplicación de lista de tareas desarrollada en React, con persistencia en LocalStorage, edición en vivo y animaciones suaves.",
+      img: "/images/todo.png",
+      demoLink: "https://tareas-app.netlify.app/",
+      codeLink: "https://github.com/JAndresUbaque/ToDo-react.git",
+    },
+    {
+      title: "Juego clásico “Adivina el número”🎲",
+      year: "Junio 2026", 
+      description:
+        " Juego desarrollado con JavaScript puro. Practica lógica condicional, manejo del DOM y eventos dinámicos.",
+      img: "/images/play.png",
+      demoLink: "https://adivina-el-num-js.netlify.app/",
+      codeLink: "https://github.com/JAndresUbaque/adivina-el-numero-js.git",
+    },
+    {
+      title: "Calculadora Basica Web JavaScript 🧮",
+      year: "Junio 2026", 
+      description:
+        "Calculadora desarrollada con HTML, CSS y JavaScript. Incluye operaciones básicas, porcentaje y manejo del DOM.",
+      img: "/images/calculadora-preview.PNG",
+      demoLink: "https://calculadorabasica-js.netlify.app/",
+      codeLink: "https://github.com/JAndresUbaque/calculadora-js.git",
+    },
+  ];
+
+ 
+
+  return (
+    <section id="projects" className="py-20 text-slate-100">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* TÍTULO PRINCIPAL */}
+        <motion.h2
+          className="text-4xl font-extrabold text-center neon-text mb-14 tracking-tight"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+        >
+          Proyectos
+        </motion.h2>
+
+        {/* SECCIÓN EMPRESARIALES */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-2xl text-center font-semibold mb-6"
+            style={{ color: "var(--accent-3)" }}
+          >
+            EMPRESARIALES
+          </motion.h3>
+
+          <div className="flex flex-wrap justify-center gap-6 " >
+            {businessProjects.map((project, index) => (
+              <BusinessProjectCard
+                key={index}
+                title={project.title}
+                year={project.year}
+                description={project.description}
+                img={project.img}
+                link={project.link}
+
+              />
+            ))}
+          </div>
+        </motion.div>
+
+        {/* SECCIÓN PRÁCTICA */}
+        <motion.div
+          className="mb-20 gap-6 mt-12"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <motion.h3
+            className="text-2xl text-center font-semibold mb-6"
+            style={{ color: "var(--accent-3)" }}
+          >
+            PRÁCTICA
+          </motion.h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {practiceProjects.map((project, index) => (
+              <PracticeProjectCard
+                key={index}
+                title={project.title}
+                year={project.year}
+                description={project.description}
+                img={project.img}
+                demoLink={project.demoLink}
+                codeLink={project.codeLink}
+              />
+            ))}
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}
+
+export default Projects;
+</file>
+
+</files>

@@ -49,7 +49,7 @@ function Projects() {
       year: "Junio 2026", 
       description:
         "Calculadora desarrollada con HTML, CSS y JavaScript. Incluye operaciones básicas, porcentaje y manejo del DOM.",
-      img: "/images/calculadora-preview.png",
+      img: "/images/calculadora-preview.PNG",
       demoLink: "https://calculadorabasica-js.netlify.app/",
       codeLink: "https://github.com/JAndresUbaque/calculadora-js.git",
     },
